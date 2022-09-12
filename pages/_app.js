@@ -1,9 +1,7 @@
-import '../styles/main.sass'
+import '../styles/main.scss'
 
 function MyApp({Component, pageProps}) {
-    return (<div className={"container"}>
-        <Component {...pageProps} />
-    </div>)
+    return (<Component {...pageProps} />)
 }
 
 export default MyApp

@@ -19,3 +19,10 @@ a {
     width: 1920px;
     height: 1080px;
 }
+
+.container__content {
+    position: absolute;
+    width: 1920px;
+    height: 6641px;
+    background-color: #FFDD63;
+}

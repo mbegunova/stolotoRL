@@ -3,6 +3,10 @@ import {mainContent} from "../constants/copyright";
 
 export default function Home() {
     return (
-        <Main {...mainContent}/>
+        <div className={"container"}>
+            <div className={"container__content"}>
+            <Main {...mainContent}/>
+            </div>
+        </div>
     )
 }
