@@ -53,3 +53,54 @@ export const mainContent = {
         text: "Купить билет",
     }
 }
+
+
+export const winnersContent = {
+    list: [
+        {
+            image: "images/winners/1.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        },
+        {
+            image: "images/winners/2.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        }, {
+            image: "images/winners/3.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        },
+        {
+            image: "images/winners/1.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        },
+        {
+            image: "images/winners/2.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        }, {
+            image: "images/winners/3.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        },
+        {
+            image: "images/winners/1.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        },
+        {
+            image: "images/winners/2.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        }, {
+            image: "images/winners/3.png",
+            name: "Людмила Новик",
+            prize: "706 577 ₽"
+        }
+    ],
+    iconNav: "images/winners/next.svg",
+    bg: "images/winners/sphera.png",
+    title: "Наши победители"
+}

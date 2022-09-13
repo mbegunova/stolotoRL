@@ -1,0 +1,146 @@
+.winners {
+  position: absolute;
+  top: 1080px;
+  width: 100%;
+  height: 1080px;
+  //display: flex;
+  //justify-content: center;
+  //align-content: center;
+
+  &__bg {
+    position: absolute;
+    top: -30px;
+    left: 127px;
+    width: 1712px;
+    height: 874px;
+  }
+
+  &__title {
+    position: absolute;
+    width: 860px;
+    height: 69px;
+
+    top: 49px;
+    left: 193px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 95%;
+
+    color: #141D3A;
+  }
+
+
+  &__carousel {
+    position: absolute;
+    width: 1600px;
+    height: 800px;
+    top: 225px;
+    margin-left: auto;
+  }
+
+  &__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #141D3A;
+    font-style: normal;
+    pointer-events: none;
+  }
+
+  &__item-image {
+    width: 424px;
+    height: 424px;
+
+    background: linear-gradient(180deg, #DED4D6 0%, #DFD3D3 100%);
+    box-shadow: 9px 12px 21px rgba(95, 0, 0, 0.15);
+    border-radius: 300px;
+  }
+
+  &__item-name {
+    height: 27px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #141D3A;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &__item-prize {
+    width: 329px;
+    height: 63px;
+
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 116%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &__nav {
+    position: absolute;
+
+    width: 259px;
+    height: 45px;
+    left: 829px;
+    bottom: 124px;
+
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    user-select: none;
+
+    .swiper-button-disabled {
+      opacity: 0.7;
+    }
+  }
+
+  &__nav-el {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 15.37px;
+    }
+  }
+
+  &__nav-next {
+    right: 0;
+  }
+
+  &__nav-prev {
+    left: 0;
+
+    img {
+      transform: scaleX(-1);
+    }
+  }
+
+  &__nav-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: auto;
+    color: #141D3A;
+  }
+
+}
