@@ -1,18 +1,13 @@
 .winners {
 
-  &__bg {
-    position: absolute;
-    top: -30px;
-    left: 127px;
-    width: 1712px;
-    height: 874px;
-  }
+  position: relative;
+  margin: 0 0 65px 0;
 
   &__carousel {
     position: absolute;
     width: 1600px;
     height: 549px;
-    margin: 54px auto 146px auto;
+    margin: 54px auto 130px auto;
   }
 
   &__item {
@@ -139,24 +134,6 @@
     margin: 0 16px 0 0;
   }
 
-  &__bg2 {
-    position: absolute;
-    left: 0;
-    top: 558px;
-    z-index: 0;
-  }
-
-  &__decoration_1 {
-    position: absolute;
-    left: 149px;
-    top: 852px;
-  }
-
-  &__decoration_3 {
-    position: absolute;
-    left: 49px;
-    top: 1001px;
-  }
 
 
 }

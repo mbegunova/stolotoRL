@@ -8,11 +8,32 @@
   line-height: 95%;
 
   color: #141D3A;
-
   margin: 150px 0 0 198px;
 
   &-main {
     margin: 210px 0 0 198px;
+  }
+
+  &-winners {
+    margin: 48px 0 0 193px;
+  }
+
+  &-rules {
+    margin: 28px 0 0 198px;
+  }
+
+  &-info {
+    margin: 100px 0 0 198px;
+  }
+
+  &-download-link {
+    margin: 120px 0 0 198px;
+  }
+
+  &-prizes {
+    position: absolute;
+    color: #FFFFFF;
+    margin: 51px 0 0 198px;
   }
 
 }

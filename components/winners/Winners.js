@@ -21,7 +21,6 @@ export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}
     }
 
     return (<div className={"winners"}>
-        {/*<img className={"winners__bg"} src={bg} alt={"bg"}/>*/}
         <Title title={title} className={"title-winners"}/>
         <Carousel data={list} element={WinnerItem} className={"winners__carousel"} settings={{
             slidesPerView: 3,
@@ -43,9 +42,6 @@ export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}
             </div>
         </div>
         <div className={"winners__sign"}>{sign}</div>
-        {/*<img className={"winners__bg2"} src={bg2}/>*/}
         <div className={"winners__icons"}> {Icons()}</div>
-        {/*{Decorations()}*/}
-
     </div>)
 }

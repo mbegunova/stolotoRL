@@ -19,7 +19,7 @@ export function DownloadList({list, title, button, loadButton, image}) {
     }
 
     return (<div className={"download-list"}>
-        <Title title={title}/>
+        <Title title={title} className={"title-download-link"}/>
         <div className={"download-list__list"}>
             {items()}
             <button className={"download-list__load-button"}>

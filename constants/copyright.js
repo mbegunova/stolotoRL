@@ -55,12 +55,10 @@ export const winnersContent = {
         image: "images/winners/3.png", name: "Людмила Новик", prize: "706 577 ₽"
     }],
     iconNav: "images/winners/next.svg",
-    bg: "images/winners/sphera.png",
     title: "Наши победители",
     sign: "Ещё больше историй смотрите в соцсетях",
     icons: ["images/winners/icon1.png", "images/winners/icon2.png", "images/winners/icon3.png", "images/winners/icon4.png",],
-    decoration: ["images/winners/4.png", "images/winners/5.png", "images/winners/6.png",],
-    bg2: "images/winners/bg.png",
+
 }
 
 
@@ -103,6 +101,7 @@ export const infoContent = {
     title: "Покупать билеты\nонлайн – безопасно",
     list: [
         {
+            mod: "active",
             title: "Безопасная регистрация",
             text: "При регистрации вы указываете только свой электронный адрес и номер телефона. На этот номер мы будем отправлять вам смс с паролем для получения выигрышей на сайте.",
             image: "images/info/1.png",
@@ -206,5 +205,29 @@ export const footerContent = {
 }
 
 export const bgContent = {
+    decoration: ["images/bg/4.png", "images/bg/6.png",],
+    bgs: [
+        {
+            name: "bg",
+            image: "images/bg/sphera.png",
+        },
+        {
+            name: "bg2",
+            image: "images/bg/bg.png",
 
+        },
+        {
+            name: "bg3",
+            image: "images/bg/bg3.png",
+        }
+    ]
+}
+
+
+export const prizesContent = {
+    title: "Уютные осенние призы ждут вас!",
+    bg: "images/bg/bg4.png",
+    button: {
+        text: "Купить"
+    },
 }

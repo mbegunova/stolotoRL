@@ -21,12 +21,13 @@ a {
 }
 
 .container__content {
-    height: 6641px;
+    position: absolute;
+    width: 1920px;
+    height: 7329px;
     display: flex;
     flex-direction: column;
-    background-color: #FFDD63;
 }
 
-div{
+div {
     white-space: pre-line;
 }

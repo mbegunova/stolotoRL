@@ -1,15 +1,14 @@
 .bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 7329px;
   top: 0;
   left: 0;
+  overflow: hidden;
 
   &__circle {
-
-
+    position: absolute;
     &_1 {
-      position: absolute;
       width: 2762px;
       height: 2762px;
       left: 382px;
@@ -105,6 +104,47 @@
       background: #EF6060;
       filter: blur(100px);
     }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 1712px;
+    height: 874px;
+    left: 127px;
+    top: 1046px;
+  }
+
+
+  &__bg2 {
+    position: absolute;
+    width: 261.74px;
+    height: 758px;
+    left: -17px;
+    top: 1639px;
+  }
+
+  &__bg3 {
+    position: absolute;
+    width: 1926px;
+    height: 2312px;
+    left: -6px;
+    top: 4177px;
+  }
+
+  &__decoration_1 {
+    position: absolute;
+    width: 108px;
+    height: 134px;
+    left: 211.79px;
+    top: 1903.73px;
+  }
+
+  &__decoration_2 {
+    position: absolute;
+    width: 169.81px;
+    height: 146.42px;
+    left: 30px;
+    top: 2242.84px;
   }
 
 

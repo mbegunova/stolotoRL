@@ -1,9 +1,10 @@
 import {Main} from "/components/main/Main";
 import {
+    bgContent,
     downloadListContent,
     footerContent,
     infoContent,
-    mainContent,
+    mainContent, prizesContent,
     rulesContent,
     winnersContent
 } from "../constants/copyright";
@@ -13,18 +14,20 @@ import {Info} from "../components/info/Info";
 import {DownloadList} from "../components/downloadList/DownloadList";
 import {Footer} from "../components/footer/Footer";
 import Bg from "../components/bg/Bg";
+import Prizes from "../components/prizes/Prizes";
 
 export default function Home() {
     return (
         <div className={"container"}>
+            <Bg {...bgContent}/>
             <div className={"container__content"}>
-                <Bg/>
-                {/*<Main {...mainContent}/>*/}
-                {/*<Winners {...winnersContent}/>*/}
-                {/*<Rules {...rulesContent}/>*/}
-                {/*<Info {...infoContent}/>*/}
-                {/*<DownloadList {...downloadListContent}/>*/}
-                {/*<Footer {...footerContent}/>*/}
+                <Main {...mainContent}/>
+                <Winners {...winnersContent}/>
+                <Rules {...rulesContent}/>
+                <Info {...infoContent}/>
+                <DownloadList {...downloadListContent}/>
+                <Prizes {...prizesContent}/>
+                <Footer {...footerContent}/>
             </div>
         </div>
     )
