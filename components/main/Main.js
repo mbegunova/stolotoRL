@@ -1,5 +1,6 @@
 import {Menu} from "../menu/Menu";
 import Button from "../button/Button";
+import Title from "../title/Title";
 
 export function Main({bg, list, menu, prize, home, title, logo, images, chanel, button}) {
 
@@ -20,7 +21,7 @@ export function Main({bg, list, menu, prize, home, title, logo, images, chanel, 
 
     return (<div className={"main"}>
         <img className={"main__bg"} src={bg}/>
-        <div className={"main__title"}>{title}</div>
+        <Title title={title} className={"title-main"}/>
         <img className={"main__prize"} src={prize} alt={"prize"}/>
         <img className={"main__logo"} src={logo} alt={"logo"}/>
         <img className={"main__home"} src={home} alt={"home"}/>
@@ -35,6 +36,6 @@ export function Main({bg, list, menu, prize, home, title, logo, images, chanel, 
             <img src={chanel.image}/>
             <div className={"main__chanel-text"}>{chanel.text}</div>
         </div>
-        <Button {...button}/>
+        <Button {...button} className={"main__button"}/>
     </div>)
 }

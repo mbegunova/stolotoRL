@@ -1,8 +1,4 @@
 .winners {
-  position: absolute;
-  top: 1080px;
-  width: 100%;
-  height: 1080px;
 
   &__bg {
     position: absolute;
@@ -12,29 +8,11 @@
     height: 874px;
   }
 
-  &__title {
-    position: absolute;
-    width: 860px;
-    height: 69px;
-
-    top: 49px;
-    left: 193px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 73px;
-    line-height: 95%;
-
-    color: #141D3A;
-  }
-
-
   &__carousel {
     position: absolute;
     width: 1600px;
-    height: 800px;
-    top: 225px;
-    margin-left: auto;
+    height: 549px;
+    margin: 54px auto 146px auto;
   }
 
   &__item {
@@ -86,12 +64,9 @@
   }
 
   &__nav {
-    position: absolute;
-
     width: 259px;
     height: 45px;
-    left: 829px;
-    bottom: 124px;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
@@ -104,7 +79,6 @@
   }
 
   &__nav-el {
-    position: absolute;
     width: 45px;
     height: 45px;
 
@@ -141,11 +115,9 @@
   }
 
   &__sign {
-    position: absolute;
     width: 206px;
     height: 44px;
-    left: 1363px;
-    top: 873.98px;
+    margin: -25px 0 23px 1190px;
 
     font-style: normal;
     font-weight: 500;
@@ -156,13 +128,12 @@
   }
 
   &__icons {
-    position: absolute;
-    left: 1363px;
-    top: 940.98px;
+    margin: 0 1186px 0 1190px;
+    width: 500px;
+    height: 70px;
   }
 
   &__icon {
-    position: relative;
     width: 65.54px;
     height: 65.54px;
     margin: 0 16px 0 0;

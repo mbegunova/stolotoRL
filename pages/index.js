@@ -1,7 +1,8 @@
 import {Main} from "/components/main/Main";
-import {mainContent, rulesContent, winnersContent} from "../constants/copyright";
+import {infoContent, mainContent, rulesContent, winnersContent} from "../constants/copyright";
 import {Winners} from "../components/winners/Winners";
 import {Rules} from "../components/rules/Rules";
+import {Info} from "../components/info/Info";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
                 <Main {...mainContent}/>
                 <Winners {...winnersContent}/>
                 <Rules {...rulesContent}/>
+                <Info {...infoContent}/>
             </div>
         </div>
     )

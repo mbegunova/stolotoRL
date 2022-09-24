@@ -1,9 +1,4 @@
 .rules {
-  position: absolute;
-  top: 2160px;
-  width: 100%;
-  height: 1080px;
-
 
   font-size: 40px;
   color: #FFFFFF;
@@ -25,12 +20,9 @@
   }
 
   &__carousel {
-    position: absolute;
-    top: 155px;
-    left: 198px;
+    margin: 150px auto 100px 0;
     height: 607px;
-    width: 100%;
-    
+    width: 1670px;
   }
 
   .swiper-slide-active {
@@ -131,13 +123,10 @@
 
 
   &__nav {
-    position: absolute;
-    top: 818px;
-
     width: 259px;
     height: 45px;
-    left: 829px;
-    bottom: 124px;
+
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
@@ -150,7 +139,6 @@
   }
 
   &__nav-el {
-    position: absolute;
     width: 45px;
     height: 45px;
 

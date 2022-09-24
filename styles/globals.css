@@ -21,9 +21,9 @@ a {
 }
 
 .container__content {
-    position: absolute;
-    width: 1920px;
     height: 6641px;
+    display: flex;
+    flex-direction: column;
     background-color: #FFDD63;
 }
 

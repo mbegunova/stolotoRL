@@ -1,23 +1,11 @@
 .main {
-  width: 100%;
+  position: relative;
   height: 1080px;
-
 
   &__bg {
     position: absolute;
     right: 0;
     z-index: 0;
-  }
-
-  &__title {
-    position: absolute;
-    color: #141D3A;
-    left: 195px;
-    top: 210px;
-    width: 767px;
-    font-weight: bold;
-    font-size: 85px;
-    line-height: 80.75px;
   }
 
   &__prize {
@@ -36,6 +24,7 @@
   &__home {
     position: absolute;
     right: 0;
+    top: 0;
   }
 
   &__cards {

@@ -1,6 +1,7 @@
 import {Carousel} from "../carousel/Carousel";
 import {useState} from "react";
 import Button from "../button/Button";
+import Title from "../title/Title";
 
 export function Rules({list, title, iconNav, button}) {
     const [active, setActive] = useState(null);
@@ -20,7 +21,7 @@ export function Rules({list, title, iconNav, button}) {
 
     return (
         <div className={"rules"}>
-            <div className={"rules__title"}>{title}</div>
+            <Title title={title} className={"title-rules"}/>
             <Carousel data={list} element={RulesItem} className={"rules__carousel"} settings={{
                 slidesPerView: 1,
                 spaceBetween: 28,
@@ -33,11 +34,11 @@ export function Rules({list, title, iconNav, button}) {
                 },
             }}/>
             <div className={"rules__nav"}>
-                <div className={"rules__nav-el rules__nav-next"}>
+                <div className={"rules__nav-el rules__nav-prev"}>
                     <img src={iconNav}/>
                 </div>
                 <div className={"rules__nav-text"}>{`${active + 1}................${list.length}`}</div>
-                <div className={"rules__nav-el rules__nav-prev"}>
+                <div className={"rules__nav-el rules__nav-next"}>
                     <img src={iconNav}/>
                 </div>
             </div>
