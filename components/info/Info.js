@@ -9,12 +9,12 @@ export function Info({list, title, link}) {
 
     return (<div className={"info"}>
         <Title title={title} className={"title-info"}/>
-        <div>
+        <div className={"info__list"}>
             {items()}
         </div>
-        <div>
+        <a className={"info__link"}>
             <div>{link.text}</div>
-            <img src={link.icon}/>
-        </div>
+            <img className={"info__link-image"} src={link.icon}/>
+        </a>
     </div>)
 }
