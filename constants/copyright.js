@@ -123,8 +123,43 @@ export const infoContent = {
             image: "images/info/4.png",
         }
     ],
-    link:{
+    link: {
         text: "Смотреть \nвидео",
         icon: "images/info/icon.svg",
     }
+}
+
+export const downloadListContent = {
+    title: "Скачайте мобильное\nприложение «Столото»",
+    list: [
+        {
+            icon: "images/downloadList/1.svg",
+            text: "Удобная и безопасная оплата"
+        },
+        {
+            icon: "images/downloadList/2.svg",
+            text: "Быстрый вывод денег на карту"
+        },
+        {
+            icon: "images/downloadList/3.svg",
+            text: "Лотереи всегда под рукой"
+        },
+        {
+            icon: "images/downloadList/4.svg",
+            text: "Push-уведомления о выигрышах"
+        }
+    ],
+    loadButton: {
+        text: "Скачать",
+        icons: [
+            "images/downloadList/5.svg",
+            "images/downloadList/6.svg",
+            "images/downloadList/7.svg",
+            "images/downloadList/8.svg",
+        ]
+    },
+    button: {
+        text: "Повысить шансы"
+    },
+    image:  "images/downloadList/phone.png",
 }

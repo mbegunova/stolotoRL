@@ -1,8 +1,9 @@
 import {Main} from "/components/main/Main";
-import {infoContent, mainContent, rulesContent, winnersContent} from "../constants/copyright";
+import {downloadListContent, infoContent, mainContent, rulesContent, winnersContent} from "../constants/copyright";
 import {Winners} from "../components/winners/Winners";
 import {Rules} from "../components/rules/Rules";
 import {Info} from "../components/info/Info";
+import {DownloadList} from "../components/downloadList/DownloadList";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <Winners {...winnersContent}/>
                 <Rules {...rulesContent}/>
                 <Info {...infoContent}/>
+                <DownloadList {...downloadListContent}/>
             </div>
         </div>
     )
