@@ -1,0 +1,111 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  &__circle {
+
+
+    &_1 {
+      position: absolute;
+      width: 2762px;
+      height: 2762px;
+      left: 382px;
+      top: -714px;
+
+      background: #F27961;
+      filter: blur(100px);
+    }
+
+    &_2 {
+      width: 1886px;
+      height: 1886px;
+      left: 56px;
+      top: 2154px;
+
+      background: #EF6060;
+      filter: blur(100px);
+    }
+
+    &_3 {
+      position: absolute;
+      width: 1886px;
+      height: 1886px;
+      left: -350.86px;
+      top: 3840.72px;
+
+      background: rgba(239, 96, 96, 0.8);
+      filter: blur(100px);
+    }
+
+    &_4 {
+      position: absolute;
+      width: 3068px;
+      height: 3068px;
+      left: -2090px;
+      top: 223px;
+
+      background: rgba(246, 145, 97, 0.8);
+      filter: blur(100px);
+    }
+
+    &_5 {
+      position: absolute;
+      width: 1951px;
+      height: 1951px;
+      left: 633px;
+      top: 3278px;
+
+      background: rgba(246, 145, 97, 0.8);
+      filter: blur(100px);
+    }
+
+    &_6 {
+      position: absolute;
+      width: 2252px;
+      height: 2252px;
+      left: 307.31px;
+      top: 4361.78px;
+
+      background: rgba(255, 245, 209, 0.8);
+      filter: blur(250px);
+    }
+
+    &_7 {
+      position: absolute;
+      width: 1815px;
+      height: 1815px;
+      left: 173px;
+      top: 836px;
+
+      background: rgba(255, 245, 209, 0.8);
+      filter: blur(250px);
+    }
+
+    &_8 {
+      position: absolute;
+      width: 501px;
+      height: 501px;
+      left: 728px;
+      top: 758px;
+
+      background: #FFFFFF;
+      filter: blur(250px);
+    }
+
+    &_9 {
+      position: absolute;
+      width: 732px;
+      height: 732px;
+      left: 578px;
+      top: 3698px;
+
+      background: #EF6060;
+      filter: blur(100px);
+    }
+  }
+
+
+}
