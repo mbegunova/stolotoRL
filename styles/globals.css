@@ -26,3 +26,7 @@ a {
     height: 6641px;
     background-color: #FFDD63;
 }
+
+div{
+    white-space: pre-line;
+}

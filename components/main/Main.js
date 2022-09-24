@@ -1,4 +1,5 @@
-import {Menu} from "../Menu/Menu";
+import {Menu} from "../menu/Menu";
+import Button from "../button/Button";
 
 export function Main({bg, list, menu, prize, home, title, logo, images, chanel, button}) {
 
@@ -34,6 +35,6 @@ export function Main({bg, list, menu, prize, home, title, logo, images, chanel, 
             <img src={chanel.image}/>
             <div className={"main__chanel-text"}>{chanel.text}</div>
         </div>
-        <button className={"main__button"}>{button.text}</button>
+        <Button {...button}/>
     </div>)
 }
