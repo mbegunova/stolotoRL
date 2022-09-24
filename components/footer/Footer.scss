@@ -1,0 +1,72 @@
+.footer {
+  position: relative;
+  background: #0F1114;
+
+  height: 840px;
+  color: #7F858A;
+
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3333px;
+  line-height: 18px;
+
+  &__logo {
+    position: absolute;
+    width: 186.67px;
+    height: 52.24px;
+    left: 208px;
+    top: 228px;
+  }
+
+  &__main-text {
+    position: absolute;
+    width: 904px;
+    height: 126px;
+    left: 208px;
+    top: 310px;
+  }
+
+  &__icons {
+    position: absolute;
+    width: 219.52px;
+    height: 35.38px;
+    left: 208px;
+    top: 686px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: block;
+    width: 35.38px;
+  }
+
+  &__content {
+    position: absolute;
+    width: 448px;
+    left: 1204px;
+    top: 228px;
+  }
+
+  &__images {
+    position: relative;
+    display: flex;
+    margin-bottom: 27px;
+
+    img {
+      margin-right: 29px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 27px;
+
+    &_white {
+      color: #FFFFFF;
+    }
+  }
+
+}
