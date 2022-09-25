@@ -1,15 +1,15 @@
 import classNames from "classnames";
 
-export function Footer({text, logo, icons, list}) {
+export function Footer({text, logo, icons, list, iconsMob}) {
 
-    function iconList() {
-        return icons && icons.map((img, index) => (<div className={"footer__icon"} key={index}>
+    function iconList(list) {
+        return list && list.map((img, index) => (<div className={"footer__icon"} key={index}>
             <img src={img}/>
         </div>))
     }
 
     function imageList(list) {
-        return list.map(({image}, index) => (<div className={"footer__image"} key={index}>
+        return list.map(({image}, index) => (<div className={`footer__image footer__image_${index + 1}`} key={index}>
             <img src={image}/>
         </div>))
     }
@@ -30,11 +30,15 @@ export function Footer({text, logo, icons, list}) {
             <img src={logo}/>
         </div>
         <div className={"footer__main-text"}>{text}</div>
+        <hr className={"footer__hr"}/>
         <div className={"footer__icons"}>
-            {iconList()}
+            {iconList(icons)}
         </div>
         <div className={"footer__content"}>
             {content()}
+        </div>
+        <div className={"footer__icons footer__icons_mob"}>
+            {iconList(iconsMob)}
         </div>
     </div>)
 }

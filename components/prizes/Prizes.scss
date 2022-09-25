@@ -18,6 +18,7 @@
 
   &__image_mob {
     position: absolute;
+    top: -172px;
     display: none;
     @include MOBILE {
       display: block;

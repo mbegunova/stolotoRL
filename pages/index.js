@@ -27,7 +27,7 @@ export default function Home() {
                 <Info {...infoContent}/>
                 <DownloadList {...downloadListContent}/>
                 <Prizes {...prizesContent}/>
-                {/*<Footer {...footerContent}/>*/}
+                <Footer {...footerContent}/>
             </div>
         </div>
     )

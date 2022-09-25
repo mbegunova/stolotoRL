@@ -234,6 +234,14 @@ export const footerContent = {
         {
             text: "ELA — объединение лотерейных компанийиз Европы и соседних \nрегионов."
         }
+    ],
+    iconsMob: [
+        "images/footer/icon1.svg",
+        "images/footer/icon2.svg",
+        "images/footer/icon3.svg",
+        "images/footer/icon4.svg",
+        "images/footer/icon5.svg",
+        "images/footer/icon6.svg",
     ]
 }
 
