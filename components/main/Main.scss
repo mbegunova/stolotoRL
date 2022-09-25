@@ -6,18 +6,50 @@
     position: absolute;
     right: 0;
     z-index: 0;
+    display: block;
+
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__bg2 {
+    display: none;
+    @include MOBILE {
+      position: absolute;
+      display: block;
+      top: 0;
+      width: 627.19px;
+      height: 400.4px;
+    }
   }
 
   &__prize {
     position: absolute;
     top: 407px;
     left: 127px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 327.78px;
+      height: 60.11px;
+      left: 16.22px;
+      top: 287px;
+    }
   }
 
   &__logo {
     position: absolute;
     top: 34px;
     left: 200px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 70px;
+      height: 76px;
+      left: 16px;
+      top: 36px;
+    }
   }
 
 
@@ -25,6 +57,23 @@
     position: absolute;
     right: 0;
     top: 0;
+    display: block;
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__home2 {
+    display: none;
+
+    @include MOBILE {
+      display: block;
+      position: absolute;
+      width: 231.63px;
+      height: 209.34px;
+      left: 74.05px;
+      top: 14px;
+    }
   }
 
   &__cards {
@@ -34,6 +83,9 @@
     height: 192px;
     top: 639px;
     left: 192px;
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__card {
@@ -44,10 +96,16 @@
 
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
-
     border-radius: 14px;
 
-    font-style: normal;
+
+    @include MOBILE {
+      width: 257px;
+      height: 110px;
+
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 10.903px;
+    }
 
     &_1 {
       width: 330px;
@@ -98,6 +156,16 @@
     background: #E12D2D;
     border-radius: 20px;
 
+    @include MOBILE {
+      width: 89px;
+      height: 22px;
+      left: 12px;
+      top: 10px;
+      border-radius: 15.5758px;
+
+      font-size: 10px;
+      line-height: 16px;
+    }
 
     font-weight: 400;
     font-size: 16px;
@@ -108,18 +176,26 @@
   }
 
   &__card-title {
-
+    width: 122px;
     position: absolute;
     height: 78px;
     top: 50px;
     left: 11px;
-    width: 122px;
 
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
 
     color: #000000;
+
+    @include MOBILE {
+      width: 167px;
+      top: 40px;
+      left: 12px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+    }
   }
 
   &__card-subtitle {
@@ -135,6 +211,15 @@
 
     text-transform: uppercase;
     color: #E12D2D;
+
+    @include MOBILE {
+      width: 209px;
+      font-weight: 400;
+      font-size: 10px;
+      color: #350296;
+      top: 82px;
+      left: 12px;
+    }
   }
 
   &__card-date {
@@ -148,6 +233,16 @@
     line-height: 16px;
 
     color: rgba(0, 0, 0, 0.44);
+
+    @include MOBILE {
+      width: 135px;
+      bottom: 70px;
+      left: 110px;
+
+      font-size: 10px;
+      text-align: right;
+      color: #350296;
+    }
   }
 
   &__decoration {
@@ -177,6 +272,18 @@
     height: 67px;
     left: 201px;
     top: 855px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 257px;
+      height: 39px;
+      left: 17px;
+      top: 552px;
+      img {
+        width: 39px;
+        height: 39px;
+      }
+    }
   }
 
   &__chanel-text {
@@ -189,5 +296,41 @@
     font-size: 16px;
     line-height: 22px;
     color: #212121;
+
+    @include MOBILE {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 16px;
+      color: #141D3A;
+      left: 53px;
+      top: -41px;
+    }
+  }
+
+  &__carousel {
+    position: absolute !important;
+    height: 110px;
+    width: 100%;
+    left: 30px;
+    top: 365px;
+    overflow: visible !important;
+
+    .swiper-slide-active {
+      .main__card {
+        background: #FFFFFF;
+      }
+    }
+
+    .swiper-slide-next {
+      .main__card {
+        transform: translateX(-86px);
+      }
+    }
+
+    .swiper-slide-prev {
+      .main__card {
+        transform: translateX(89px);
+      }
+    }
   }
 }

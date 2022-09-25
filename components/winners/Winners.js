@@ -26,7 +26,6 @@ export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}
             slidesPerView: 3,
             onInit: (swiper) => {
                 setSwiper(swiper);
-                window.swiper = swiper;
             },
             onSlideChange: (swiper) => {
                 setActive(swiper.activeIndex)

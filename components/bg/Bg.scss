@@ -6,6 +6,11 @@
   left: 0;
   overflow: hidden;
 
+  @include MOBILE{
+    height: 4386px;
+    width: 100%;
+  }
+
   &__circle {
     position: absolute;
     &_1 {
