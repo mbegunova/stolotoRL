@@ -132,10 +132,21 @@
     height: 758px;
     left: -17px;
     top: 1639px;
+    display: block;
 
     @include MOBILE {
       display: none;
     }
+  }
+
+  &__bg-md{
+    @include DESKTOP{
+      display: none;
+    }
+    display: block;
+    position: absolute;
+    left:0px;
+    top: 2315px;
   }
 
   &__bg3 {

@@ -1,5 +1,6 @@
 import {InfoItem} from "./InfoItem";
 import Title from "../title/Title";
+import {Carousel} from "../carousel/Carousel";
 
 export function Info({list, title, link}) {
 
@@ -12,8 +13,9 @@ export function Info({list, title, link}) {
         <div className={"info__list"}>
             {items()}
         </div>
+        <Carousel data={list} element={InfoItem} className={"info__carousel"}/>
         <a className={"info__link"}>
-            <div>{link.text}</div>
+            <div className={"info__link-text"}>{link.text}</div>
             <img className={"info__link-image"} src={link.icon}/>
         </a>
     </div>)

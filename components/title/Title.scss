@@ -42,6 +42,10 @@
 
   &-info {
     margin: 100px 0 0 198px;
+
+    @include MOBILE {
+      margin: 17px 0 0 13px;
+    }
   }
 
   &-download-link {

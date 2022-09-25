@@ -24,7 +24,7 @@ export default function Home() {
                 <Main {...mainContent}/>
                 <Winners {...winnersContent}/>
                 <Rules {...rulesContent}/>
-                {/*<Info {...infoContent}/>*/}
+                <Info {...infoContent}/>
                 {/*<DownloadList {...downloadListContent}/>*/}
                 {/*<Prizes {...prizesContent}/>*/}
                 {/*<Footer {...footerContent}/>*/}
