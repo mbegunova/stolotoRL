@@ -5,6 +5,7 @@
   &__bg {
     position: absolute;
     right: 0;
+    top: 0;
     z-index: 0;
     display: block;
 
@@ -308,6 +309,10 @@
   }
 
   &__carousel {
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
     position: absolute !important;
     height: 110px;
     width: 100%;

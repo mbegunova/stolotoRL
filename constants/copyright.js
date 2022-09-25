@@ -23,18 +23,6 @@ export const mainContent = {
     },],
     imageList: [
         {
-            name: "home",
-            image: "images/main/home.png"
-        },
-        {
-            name: "home2",
-            image: "images/main/home2.png"
-        },
-        {
-            name: "prize",
-            image: "images/main/prize.png"
-        },
-        {
             name: "bg",
             image: "images/main/bg.png"
         },
@@ -45,6 +33,18 @@ export const mainContent = {
         {
             name: "logo",
             image: "images/main/logo.png"
+        },
+        {
+            name: "home",
+            image: "images/main/home.png"
+        },
+        {
+            name: "home2",
+            image: "images/main/home2.png"
+        },
+        {
+            name: "prize",
+            image: "images/main/prize.png"
         },
     ],
     chanel: {

@@ -30,7 +30,6 @@ export function Main({bg, list, menu, imageList, title, images, chanel, button})
     }
 
     return (<div className={"main"}>
-        <img className={"main__bg"} src={bg}/>
         <Title title={title} className={"title-main"}/>
         {ImageList()}
         <Menu list={menu}/>
