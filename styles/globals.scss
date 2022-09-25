@@ -16,27 +16,19 @@ a {
 }
 
 .container {
-  width: 1920px;
-  height: 1080px;
-
-
-  @include MOBILE{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
+  width: 100vw;
+  height: 100vh;
 }
 
 .container__content {
   position: absolute;
-  width: 1920px;
-  height: 7329px;
+  width: 100%;
+  height: $HEIGHT;
   display: flex;
   flex-direction: column;
 
-  @include MOBILE{
-    width: 100%;
-    height: 4386px;
+  @include MOBILE {
+    height: $MOB-HEIGHT;
     overflow-x: hidden;
   }
 }

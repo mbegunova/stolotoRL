@@ -1,14 +1,12 @@
 .bg {
   position: absolute;
-  width: 1920px;
-  height: 7329px;
+  width: 100%;
+  height: $HEIGHT;
   top: 0;
   left: 0;
-  overflow: hidden;
 
   @include MOBILE {
-    height: 4386px;
-    width: 100%;
+    height: $MOB-HEIGHT;
   }
 
   &__circle {
@@ -139,13 +137,13 @@
     }
   }
 
-  &__bg-md{
-    @include DESKTOP{
+  &__bg-md {
+    @include DESKTOP {
       display: none;
     }
     display: block;
     position: absolute;
-    left:0px;
+    left: 0px;
     top: 2315px;
   }
 
@@ -186,9 +184,7 @@
     }
 
     position: absolute;
-    width: 426px;
-    height: 422px;
-    left: -73px;
+    left: 0;
     top: 637px;
   }
 
