@@ -4,6 +4,7 @@
   height: $HEIGHT;
   top: 0;
   left: 0;
+  overflow: hidden;
 
   @include MOBILE {
     height: $MOB-HEIGHT;
