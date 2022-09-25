@@ -50,6 +50,12 @@
 
   &-download-link {
     margin: 120px 0 0 198px;
+
+    @include MOBILE {
+      margin: 210px 0 0 16px;
+      width: 324px;
+      color: #FFFFFF;
+    }
   }
 
   &-prizes {
@@ -57,5 +63,4 @@
     color: #FFFFFF;
     margin: 51px 0 0 198px;
   }
-
 }

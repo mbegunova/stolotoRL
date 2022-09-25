@@ -185,6 +185,14 @@ export const downloadListContent = {
     button: {
         text: "Повысить шансы"
     },
+    buttons: [
+        {
+            text: "Скачать"
+        },
+        {
+            text: "Хочу так же!"
+        }
+    ],
     image: "images/downloadList/phone.png",
 }
 

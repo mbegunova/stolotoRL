@@ -25,7 +25,7 @@ export default function Home() {
                 <Winners {...winnersContent}/>
                 <Rules {...rulesContent}/>
                 <Info {...infoContent}/>
-                {/*<DownloadList {...downloadListContent}/>*/}
+                <DownloadList {...downloadListContent}/>
                 {/*<Prizes {...prizesContent}/>*/}
                 {/*<Footer {...footerContent}/>*/}
             </div>

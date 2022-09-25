@@ -11,20 +11,54 @@
     color: #141D3A;
 
     margin: 183px 0 0 198px;
+
+    @include MOBILE {
+      color: #FFFFFF;
+      width: 330px;
+      letter-spacing: normal;
+      font-size: 17px;
+      line-height: 20px;
+
+      display: flex;
+      flex-wrap: wrap;
+      margin: 100px auto 45px auto;
+    }
   }
 
   &__item {
     width: 721px;
     height: 49px;
 
-    margin: 20px 0;
+    margin: 20px 4px 20px 0;
     align-items: center;
 
     display: flex;
+
+    @include MOBILE {
+      width: 161px;
+      height: 60px;
+    }
   }
 
   &__item-img {
     margin: auto 38px auto 0;
+
+
+    @include MOBILE {
+      margin: 0 13px 23px 0;
+      img {
+        width: 24px;
+        height: 29.33px;
+        filter: invert(86%) sepia(17%) saturate(5216%) hue-rotate(360deg) brightness(102%) contrast(113%);
+      }
+    }
+  }
+
+  &__item-text {
+    @include MOBILE {
+      width: 124px;
+      height: 60px;
+    }
   }
 
   &__load-button {
@@ -43,6 +77,28 @@
     border-radius: 38px;
 
     margin: 30px 0;
+
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__icons {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    @include MOBILE {
+      margin: 0 8px;
+      background: #FFFFFF;
+      border-radius: 6.31956px;
+
+      img {
+        width: 70px;
+      }
+    }
   }
 
   &__load-text {
@@ -59,6 +115,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+
   }
 
   &__image {
@@ -71,5 +128,16 @@
     position: absolute;
     top: 940px;
     left: 786px;
+  }
+
+  &__buttons-list {
+    display: none;
+
+    @include MOBILE {
+      display: block;
+      .button {
+        margin: 10px auto;
+      }
+    }
   }
 }
