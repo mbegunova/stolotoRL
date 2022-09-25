@@ -267,7 +267,8 @@ export const bgContent = {
 
 export const prizesContent = {
     title: "Уютные осенние призы ждут вас!",
-    bg: "images/bg/bg4.png",
+    bg: "images/prizes/bg4.png",
+    mBg: "images/prizes/m-bg.png",
     button: {
         text: "Купить"
     },

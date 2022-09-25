@@ -3,6 +3,10 @@
 
   margin: 0 0 500px 0;
 
+  @include MOBILE {
+    margin: 0 0 70px 0;
+  }
+
   &__list {
     font-weight: 500;
     font-size: 36px;

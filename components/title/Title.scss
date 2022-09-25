@@ -62,5 +62,10 @@
     position: absolute;
     color: #FFFFFF;
     margin: 51px 0 0 198px;
+
+    @include MOBILE {
+      width: 324px;
+      margin: 17px 0 0 13px;
+    }
   }
 }
