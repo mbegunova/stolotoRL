@@ -6,7 +6,6 @@ import Title from "../title/Title";
 
 export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}) {
     const [activeSlide, setActive] = useState(0);
-    const [swiper, setSwiper] = useState(null);
 
 
     function Icons() {
@@ -23,12 +22,17 @@ export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}
     return (<div className={"winners"}>
         <Title title={title} className={"title-winners"}/>
         <Carousel data={list} element={WinnerItem} className={"winners__carousel"} settings={{
-            slidesPerView: 3,
-            onInit: (swiper) => {
-                setSwiper(swiper);
-            },
             onSlideChange: (swiper) => {
                 setActive(swiper.activeIndex)
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 3,
+                }
             }
         }}/>
         <div className={"winners__nav"}>

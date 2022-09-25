@@ -2,6 +2,10 @@
   position: relative;
   height: 1080px;
 
+  @include MOBILE{
+    height: 620px;
+  }
+
   &__bg {
     position: absolute;
     right: 0;

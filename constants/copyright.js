@@ -241,6 +241,10 @@ export const bgContent = {
         {
             name: "bg3",
             image: "images/bg/bg3.png",
+        },
+        {
+            name: "m-bg",
+            image: "images/bg/mSphera.png",
         }
     ]
 }

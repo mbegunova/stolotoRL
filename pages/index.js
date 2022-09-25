@@ -22,7 +22,7 @@ export default function Home() {
             <Bg {...bgContent}/>
             <div className={"container__content"}>
                 <Main {...mainContent}/>
-                {/*<Winners {...winnersContent}/>*/}
+                <Winners {...winnersContent}/>
                 {/*<Rules {...rulesContent}/>*/}
                 {/*<Info {...infoContent}/>*/}
                 {/*<DownloadList {...downloadListContent}/>*/}
