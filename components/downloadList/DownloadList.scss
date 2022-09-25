@@ -84,6 +84,10 @@
   }
 
   &__icons {
+    @include DESKTOP {
+      display: none;
+    }
+
     width: 95%;
     display: flex;
     margin: 0 auto;
