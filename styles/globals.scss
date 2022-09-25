@@ -26,8 +26,10 @@ a {
   height: $HEIGHT;
   display: flex;
   flex-direction: column;
+  background: url("/images/bg/main-full.png");
 
   @include MOBILE {
+    background: url("/images/bg/mainM-full.png");
     height: $MOB-HEIGHT;
     overflow-x: hidden;
   }

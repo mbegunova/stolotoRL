@@ -3,7 +3,7 @@ import Button from "../button/Button";
 import Title from "../title/Title";
 import {Carousel} from "../carousel/Carousel";
 
-export function Main({bg, list, menu, imageList, title, images, chanel, button}) {
+export function Main({bg, list, menu, imageList, title, images, chanel, button, burger}) {
     function Card({order, title, subtitle, date}, index) {
         const id = typeof index === "number" ? index + 1 : "";
         return (
@@ -38,13 +38,13 @@ export function Main({bg, list, menu, imageList, title, images, chanel, button})
         </div>
         <Carousel data={list} element={Card} className={"main__carousel"} settings={{slidesPerView: 1}}/>
 
-        <div className={"main__decorations"}>
-            {decorations()}
-        </div>
         <div className={"main__chanel"}>
             <img src={chanel.image}/>
             <div className={"main__chanel-text"}>{chanel.text}</div>
         </div>
         <Button {...button} className={"main__button"}/>
+        <div className={"main__burger"}>
+            <img src={burger}/>
+        </div>
     </div>)
 }

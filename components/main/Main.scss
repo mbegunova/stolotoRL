@@ -2,7 +2,7 @@
   position: relative;
   height: 1080px;
 
-  @include MOBILE{
+  @include MOBILE {
     height: 620px;
   }
 
@@ -24,8 +24,6 @@
       position: absolute;
       display: block;
       top: 0;
-      width: 627.19px;
-      height: 400.4px;
     }
   }
 
@@ -250,27 +248,6 @@
     }
   }
 
-  &__decoration {
-    position: absolute;
-
-
-    &_1 {
-      left: 1646px;
-      top: 770px;
-    }
-
-    &_2 {
-      left: 1431.75px;
-      top: 827px;
-    }
-
-    &_3 {
-      left: 1743.18px;
-      top: 460px;
-    }
-
-  }
-
   &__chanel {
     position: absolute;
     width: 501px;
@@ -341,5 +318,15 @@
         transform: translateX(89px);
       }
     }
+  }
+
+  &__burger {
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
+    position: absolute;
+    right: 19px;
+    top: 35px;
   }
 }

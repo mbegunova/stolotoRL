@@ -14,33 +14,11 @@ export const mainContent = {
         subtitle: "Победителей будет больше!",
         date: "Трансляция – 18 сентября",
     }],
-    images: [{
-        type: "1", image: "images/main/2.png",
-    }, {
-        type: "2", image: "images/main/3.png",
-    }, {
-        type: "3", image: "images/main/4.png",
-    },],
+
     imageList: [
-        {
-            name: "bg",
-            image: "images/main/bg.png"
-        },
-        {
-            name: "bg2",
-            image: "images/main/bg2.png"
-        },
         {
             name: "logo",
             image: "images/main/logo.png"
-        },
-        {
-            name: "home",
-            image: "images/main/home.png"
-        },
-        {
-            name: "home2",
-            image: "images/main/home2.png"
         },
         {
             name: "prize",
@@ -52,7 +30,8 @@ export const mainContent = {
     },
     button: {
         text: "Купить билет",
-    }
+    },
+    burger: "images/main/burger.svg"
 }
 
 
@@ -246,37 +225,25 @@ export const footerContent = {
 }
 
 export const bgContent = {
-    decoration: ["images/bg/4.png", "images/bg/6.png",],
     bgs: [
+        {
+            name: "main",
+            image: "images/bg/main.png",
+        },
         {
             name: "bg",
             image: "images/bg/sphera.png",
         },
         {
-            name: "bg2",
-            image: "images/bg/bg.png",
-
-        },
-        {
-            name: "bg3",
-            image: "images/bg/bg3.png",
-        },
-        {
             name: "m-bg",
             image: "images/bg/mSphera.png",
         },
-        {
-            name: "bg-md",
-            image: "images/bg/bg-md.png",
-        }
     ]
 }
 
 
 export const prizesContent = {
     title: "Уютные осенние призы ждут вас!",
-    bg: "images/prizes/bg4.png",
-    mBg: "images/prizes/m-bg.png",
     button: {
         text: "Купить"
     },

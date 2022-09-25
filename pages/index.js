@@ -19,7 +19,7 @@ import Prizes from "../components/prizes/Prizes";
 export default function Home() {
     return (
         <div className={"container"}>
-            <Bg {...bgContent}/>
+            {/*<Bg {...bgContent}/>*/}
             <div className={"container__content"}>
                 <Main {...mainContent}/>
                 <Winners {...winnersContent}/>

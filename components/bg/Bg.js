@@ -1,13 +1,5 @@
-import classNames from "classnames";
 
-export default function Bg({decoration, bgs}) {
-
-    function Decorations() {
-        return decoration.map((img, i) => (
-            <img className={classNames(`bg__decoration`, {
-                [`bg__decoration_${i + 1}`]: true
-            })} src={img} alt={"social"} key={i}/>))
-    }
+export default function Bg({bgs}) {
 
     function images() {
         return bgs.map(({image, name}, index) => (<img className={`bg__${name}`} src={image} key={index}/>))
@@ -28,6 +20,5 @@ export default function Bg({decoration, bgs}) {
                 {circles()}
             </div>
             {images()}
-            {Decorations()}
         </div>);
 }
