@@ -23,10 +23,33 @@
     margin: 50px auto 72px 0;
     height: 607px;
     width: 1670px;
+
+    @include MOBILE {
+      width: 80%;
+      height: 365px;
+      margin: 0 auto;
+      overflow: visible !important;
+
+      .swiper-slide-next {
+        .rules__item {
+          transform: translateX(-27px);
+          transition: transform .1s ease-in-out;
+        }
+      }
+
+      .swiper-slide-prev {
+        .rules__item {
+          transform: translateX(27px);
+          transition: transform .1s ease-in-out;
+        }
+      }
+    }
   }
 
   .swiper-slide-active {
-    width: 1135px !important;
+    @include DESKTOP {
+      width: 1135px !important;
+    }
 
     .rules__item {
       position: absolute;
@@ -38,6 +61,11 @@
       border: 2px solid #A75FDCFF;
 
       color: #FFFFFF;
+
+      @include MOBILE {
+        width: 257px;
+        height: 389px;
+      }
     }
 
     .rules {
@@ -47,7 +75,9 @@
       }
 
       &__item-text {
-        width: 595.95px;
+        @include DESKTOP {
+          width: 595.95px;
+        }
       }
 
       &__item-image {
@@ -68,6 +98,12 @@
     padding: 30px;
     color: #141D3A;
 
+
+    @include MOBILE {
+      width: 257px;
+      height: 389px;
+      padding: 14px 22px;
+    }
   }
 
   &__item-num {
@@ -85,6 +121,14 @@
 
     background: #FFFFFF;
     color: #FFDA00;
+
+    @include MOBILE {
+      width: 37px;
+      height: 37px;
+      font-size: 17px;
+      line-height: 34px;
+    }
+
   }
 
   &__item-hr {
@@ -94,6 +138,10 @@
     top: 134px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__item-title {
@@ -101,24 +149,53 @@
     width: 360px;
     left: 33px;
     top: 153px;
+
+    @include MOBILE {
+      width: 131px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      margin: 15px 0 10px 0;
+    }
   }
 
   &__item-text {
     left: 33px;
-    margin: 20px 0;
+    @include DESKTOP {
+      margin: 20px 0;
+    }
 
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 130%;
     width: 455px;
+
+    @include MOBILE {
+      width: 218px;
+      font-size: 17px;
+      line-height: 20px;
+    }
+
   }
 
   &__item-image {
     position: absolute;
     top: 165px;
     left: 830px;
-    display: none;
+    @include DESKTOP {
+      display: none;
+    }
+
+    @include MOBILE {
+      left: 148px;
+      top: 22px;
+
+      img {
+        width: 84.48px;
+        height: 90.36px;
+      }
+    }
   }
 
 
@@ -135,6 +212,10 @@
 
     .swiper-button-disabled {
       opacity: 0.7;
+    }
+
+    @include MOBILE {
+      display: none;
     }
   }
 

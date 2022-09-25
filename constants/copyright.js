@@ -115,6 +115,9 @@ export const rulesContent = {
     iconNav: "images/winners/next.svg",
     button: {
         text: "Участвовать",
+    },
+    mButton: {
+        text: "Хочу так же!",
     }
 }
 

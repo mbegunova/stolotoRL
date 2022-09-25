@@ -33,7 +33,7 @@
     height: 48px;
 
     border-radius: 12px;
-
+    width: 328px;
 
     font-size: 16px;
     line-height: 16px;
@@ -46,7 +46,6 @@
   top: 937px;
 
   @include MOBILE {
-    width: 328px;
     left: 4.44%;
     top: 440px;
   }

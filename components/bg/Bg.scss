@@ -132,6 +132,10 @@
     height: 758px;
     left: -17px;
     top: 1639px;
+
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__bg3 {
@@ -148,6 +152,9 @@
     height: 134px;
     left: 211.79px;
     top: 1903.73px;
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__decoration_2 {
@@ -156,6 +163,9 @@
     height: 146.42px;
     left: 30px;
     top: 2242.84px;
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__m-bg {

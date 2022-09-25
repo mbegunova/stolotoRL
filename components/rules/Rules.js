@@ -3,9 +3,8 @@ import {useState} from "react";
 import Button from "../button/Button";
 import Title from "../title/Title";
 
-export function Rules({list, title, iconNav, button}) {
+export function Rules({list, title, iconNav, button, mButton}) {
     const [active, setActive] = useState(null);
-
 
     function RulesItem({title, text, num, image}) {
         return (<div className={"rules__item"}>
@@ -23,15 +22,15 @@ export function Rules({list, title, iconNav, button}) {
         <div className={"rules"}>
             <Title title={title} className={"title-rules"}/>
             <Carousel data={list} element={RulesItem} className={"rules__carousel"} settings={{
-                slidesPerView: 1,
-                spaceBetween: 28,
                 onSlideChange: (swiper) => {
-                    setActive(swiper.activeIndex)
+                    setActive(swiper.activeIndex);
+                    console.log(swiper.progress)
                 },
+                spaceBetween: 56,
                 navigation: {
                     nextEl: ".rules__nav-next",
                     prevEl: ".rules__nav-prev",
-                },
+                }
             }}/>
             <div className={"rules__nav"}>
                 <div className={"rules__nav-el rules__nav-prev"}>
@@ -42,7 +41,7 @@ export function Rules({list, title, iconNav, button}) {
                     <img src={iconNav}/>
                 </div>
             </div>
-            <Button {...button}/>
+            <Button {...button} className={"rules__button"}/>
         </div>
     )
 }
