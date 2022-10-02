@@ -32,7 +32,7 @@ export function Rules({list, title, iconNav, button, mButton}) {
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 0
+                        spaceBetween: 0,
                     },
                     640: {
                         slidesPerView: 1,

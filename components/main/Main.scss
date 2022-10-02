@@ -108,6 +108,7 @@
 
       background: rgba(255, 255, 255, 0.6);
       border-radius: 10.903px;
+      margin: 0 0 0 30px;
     }
 
     &_1 {
@@ -294,12 +295,11 @@
     @include MOBILE {
       display: block;
     }
-    position: absolute !important;
+
     height: 110px;
     width: 100%;
-    left: 30px;
     top: 365px;
-    overflow: visible !important;
+
 
     .swiper-slide-active {
       .main__card {
