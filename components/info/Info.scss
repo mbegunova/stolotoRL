@@ -110,6 +110,7 @@
     line-height: 150%;
 
     color: #FFFFFF;
+    user-select: none;
 
     @include MOBILE {
       left: 16px;

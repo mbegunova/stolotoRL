@@ -14,7 +14,7 @@ export function Info({list, title, link}) {
             {items()}
         </div>
         <Carousel data={list} element={InfoItem} className={"info__carousel"}/>
-        <a className={"info__link"}>
+        <a className={"info__link"} href={link.text}>
             <div className={"info__link-text"}>{link.text}</div>
             <img className={"info__link-image"} src={link.icon}/>
         </a>
