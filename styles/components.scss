@@ -1,0 +1,25 @@
+@import "../components/layouts/MainLayout";
+
+//Стилизация для collapse
+@import "~rc-collapse/assets/index.css";
+
+@import "../components/baseComponents/gui/button/Button";
+@import "../components/baseComponents/gui/customModal/CustomModal";
+@import "../components/baseComponents/gui/customMenu/CustomMenu";
+@import "../components/baseComponents/gui/customHeader/CustomHeader";
+@import "../components/baseComponents/gui/carousel/Carousel";
+
+
+
+
+
+
+@import "/components/title/Title";
+@import "/components/main/Main";
+@import "../components/menu/Menu";
+@import "/components/winners/Winners";
+@import "/components/rules/Rules";
+@import "/components/info/Info";
+@import "/components/downloadList/DownloadList";
+@import "/components/footer/Footer";
+@import "/components/prizes/Prizes";

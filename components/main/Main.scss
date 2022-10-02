@@ -1,0 +1,331 @@
+.main {
+  height: 1080px;
+
+  @include MOBILE {
+    height: 620px;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    display: block;
+
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__bg2 {
+    display: none;
+    @include MOBILE {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+  }
+
+  &__prize {
+    position: absolute;
+    top: 407px;
+    left: 127px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 327.78px;
+      height: 60.11px;
+      left: 16.22px;
+      top: 287px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 34px;
+    left: 200px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 70px;
+      height: 76px;
+      left: 16px;
+      top: 36px;
+    }
+  }
+
+
+  &__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__home2 {
+    display: none;
+
+    @include MOBILE {
+      display: block;
+      position: absolute;
+      width: 231.63px;
+      height: 209.34px;
+      left: 74.05px;
+      top: 14px;
+    }
+  }
+
+  &__cards {
+    position: absolute;
+    display: block;
+    width: 656px;
+    height: 192px;
+    top: 639px;
+    left: 192px;
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    position: absolute;
+    width: 148px;
+    height: 192px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    border-radius: 14px;
+
+
+    @include MOBILE {
+      width: 257px;
+      height: 110px;
+
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 10.903px;
+      margin: 0 0 0 30px;
+    }
+
+    &_1 {
+      width: 330px;
+      height: 192px;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+      border: 1px solid;
+      border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
+
+      .main__card-title {
+        height: 78px;
+        width: 286px;
+
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .main__card-subtitle {
+        height: 26px;
+        line-height: 20px;
+      }
+
+      .main__card-date {
+        height: 20px;
+      }
+    }
+
+    &_2 {
+      left: 353px;
+    }
+
+    &_3 {
+      left: 516px;
+    }
+  }
+
+  &__card-order {
+    position: absolute;
+    width: 122px;
+    height: 28px;
+    left: 11px;
+    top: 14px;
+
+    padding-left: 3px;
+    padding-top: 3px;
+
+    background: #E12D2D;
+    border-radius: 20px;
+
+    @include MOBILE {
+      width: 89px;
+      height: 22px;
+      left: 12px;
+      top: 10px;
+      border-radius: 15.5758px;
+
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__card-title {
+    width: 122px;
+    position: absolute;
+    height: 78px;
+    top: 50px;
+    left: 11px;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+
+    color: #000000;
+
+    @include MOBILE {
+      width: 167px;
+      top: 40px;
+      left: 12px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
+  &__card-subtitle {
+    position: absolute;
+    height: 26px;
+    width: 111px;
+    top: 115px;
+    left: 11px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    color: #E12D2D;
+
+    @include MOBILE {
+      width: 209px;
+      font-weight: 400;
+      font-size: 10px;
+      color: #350296;
+      top: 82px;
+      left: 12px;
+    }
+  }
+
+  &__card-date {
+    position: absolute;
+    height: 30px;
+    bottom: 8px;
+    left: 11px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: rgba(0, 0, 0, 0.44);
+
+    @include MOBILE {
+      width: 135px;
+      bottom: 70px;
+      left: 110px;
+
+      font-size: 10px;
+      text-align: right;
+      color: #350296;
+    }
+  }
+
+  &__chanel {
+    position: absolute;
+    width: 501px;
+    height: 67px;
+    left: 201px;
+    top: 855px;
+
+    @include MOBILE {
+      position: absolute;
+      width: 257px;
+      height: 39px;
+      left: 17px;
+      top: 552px;
+      img {
+        width: 39px;
+        height: 39px;
+      }
+    }
+  }
+
+  &__chanel-text {
+    position: relative;
+    width: 300px;
+    left: 95px;
+    top: -60px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212121;
+
+    @include MOBILE {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 16px;
+      color: #141D3A;
+      left: 53px;
+      top: -41px;
+    }
+  }
+
+  &__carousel {
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
+
+    height: 110px;
+    width: 100%;
+    top: 365px;
+
+
+    .swiper-slide-active {
+      .main__card {
+        background: #FFFFFF;
+      }
+    }
+
+    .swiper-slide-next {
+      .main__card {
+        transform: translateX(-86px);
+      }
+    }
+
+    .swiper-slide-prev {
+      .main__card {
+        transform: translateX(89px);
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
+    position: absolute;
+    right: 19px;
+    top: 35px;
+  }
+}

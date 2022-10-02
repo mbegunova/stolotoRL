@@ -1,0 +1,21 @@
+.menu {
+  position: absolute;
+  top: 34.5px;
+  left: 766.99px;
+
+
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 30.12px;
+  width: 952px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__item {
+    text-decoration: none;
+
+  }
+}

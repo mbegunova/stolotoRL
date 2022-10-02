@@ -1,0 +1,38 @@
+.prizes {
+  position: relative;
+  width: 1920px;
+  height: 1089px;
+
+  @include MOBILE {
+    width: 100%;
+    height: 900px;
+  }
+
+
+  &__image {
+    display: block;
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__image_mob {
+    position: absolute;
+    top: -172px;
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 80px;
+    left: 781px;
+
+    @include MOBILE {
+      bottom: 95px;
+      left: 18px;
+    }
+  }
+}

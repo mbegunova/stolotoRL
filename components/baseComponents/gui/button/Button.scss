@@ -1,0 +1,52 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 42px;
+  gap: 9px;
+
+  width: 358px;
+  height: 82px;
+
+  margin: 50px auto;
+
+  cursor: pointer;
+
+  background: #FFDA00;
+  border-radius: 13px;
+  border: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #141D3A;
+
+
+  @include MOBILE {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 8px;
+    height: 48px;
+
+    border-radius: 12px;
+    width: 328px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.main__button {
+  position: absolute;
+  left: 781px;
+  top: 937px;
+
+  @include MOBILE {
+    left: 4.44%;
+    top: 440px;
+  }
+}

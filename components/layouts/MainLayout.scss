@@ -1,0 +1,27 @@
+/* Layout */
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  @include menu-visible {
+    height: 100vh;
+  }
+
+  background: url("/images/bg/main-full.png");
+
+    @include MOBILE {
+      background: url("/images/bg/mainM-full.png");
+    }
+}
+.content-wrapper {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#menu-burger:checked + .main-container{
+  height: 100vh;
+}
