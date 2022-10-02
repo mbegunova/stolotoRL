@@ -127,6 +127,7 @@ export const infoContent = {
         }
     ],
     link: {
+        href: "#",
         text: "Смотреть \nвидео",
         icon: "images/info/icon.svg",
     }

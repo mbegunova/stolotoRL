@@ -9,14 +9,10 @@ export function Winners({bg, list, title, iconNav, sign, icons, decoration, bg2}
 
 
     function Icons() {
-        return icons.map((img, i) => (<img className={"winners__icon"} src={img} alt={"social"} key={i}/>))
-    }
-
-    function Decorations() {
-        return decoration.map((img, i) => (
-            <img className={classNames(`winners__decoration`, {
-                [`winners__decoration_${i + 1}`]: true
-            })} src={img} alt={"social"} key={i}/>))
+        return icons.map((img, i) => (
+            <a href={'#'} target={'_blank'} key={i}>
+                <img className={"winners__icon"} src={img} alt={"social"} key={i}/>
+            </a>))
     }
 
     return (<div className={"winners"}>

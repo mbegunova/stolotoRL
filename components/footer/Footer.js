@@ -3,9 +3,12 @@ import classNames from "classnames";
 export function Footer({text, logo, icons, list, iconsMob}) {
 
     function iconList(list) {
-        return list && list.map((img, index) => (<div className={"footer__icon"} key={index}>
-            <img src={img}/>
-        </div>))
+        return list && list.map((img, index) => (
+            <div className={"footer__icon"} key={index}>
+                <a href={'#'}>
+                    <img src={img}/>
+                </a>
+            </div>))
     }
 
     function imageList(list) {

@@ -24,12 +24,20 @@ export function Rules({list, title, iconNav, button, mButton}) {
             <Carousel data={list} element={RulesItem} className={"rules__carousel"} settings={{
                 onSlideChange: (swiper) => {
                     setActive(swiper.activeIndex);
-                    // console.log(swiper.progress)
                 },
-                spaceBetween: 56,
                 navigation: {
                     nextEl: ".rules__nav-next",
                     prevEl: ".rules__nav-prev",
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 56,
+                    }
                 }
             }}/>
             <div className={"rules__nav"}>
