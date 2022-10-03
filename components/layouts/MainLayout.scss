@@ -10,18 +10,21 @@
     height: 100vh;
   }
 
-  background: url("/images/bg/main-full.png");
+  background-image: url("/images/bg/main-full.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    @include MOBILE {
-      background: url("/images/bg/mainM-full.png");
-    }
+  @include MOBILE {
+    background-image: url("/images/bg/mainM-full.png");
+  }
 }
+
 .content-wrapper {
   display: flex;
   flex-grow: 1;
   overflow: hidden;
 }
 
-#menu-burger:checked + .main-container{
+#menu-burger:checked + .main-container {
   height: 100vh;
 }

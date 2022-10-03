@@ -1,90 +1,24 @@
 .main {
-  height: 1080px;
-
-  @include MOBILE {
-    height: 620px;
-  }
-
-  &__bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    display: block;
-
-    @include MOBILE {
-      display: none;
-    }
-  }
-
-  &__bg2 {
-    display: none;
-    @include MOBILE {
-      position: absolute;
-      display: block;
-      top: 0;
-    }
-  }
+  @include option(padding, 0 200px, 30px 16px);
 
   &__prize {
-    position: absolute;
-    top: 407px;
-    left: 127px;
-
-    @include MOBILE {
-      position: absolute;
-      width: 327.78px;
-      height: 60.11px;
-      left: 16.22px;
-      top: 287px;
-    }
+    @include option(margin, 40px 0, 0);
+    @include option(width, 841.34px, 327.78px);
   }
 
   &__logo {
     position: absolute;
-    top: 34px;
-    left: 200px;
-
-    @include MOBILE {
-      position: absolute;
-      width: 70px;
-      height: 76px;
-      left: 16px;
-      top: 36px;
-    }
-  }
-
-
-  &__home {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    @include MOBILE {
-      display: none;
-    }
-  }
-
-  &__home2 {
-    display: none;
-
-    @include MOBILE {
-      display: block;
-      position: absolute;
-      width: 231.63px;
-      height: 209.34px;
-      left: 74.05px;
-      top: 14px;
-    }
+    @include option(top, 34px, 36px);
+    @include option(left, 200px, 16px);
+    @include option(width, 92px, 70px);
   }
 
   &__cards {
-    position: absolute;
-    display: block;
     width: 656px;
-    height: 192px;
-    top: 639px;
-    left: 192px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     @include MOBILE {
       display: none;
     }
@@ -92,27 +26,29 @@
 
   &__card {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 148px;
     height: 192px;
 
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
-    border-radius: 14px;
+
+    @include option(border-radius, 14px, 10.903px);
+    @include option(padding, 14px 11px, 14px 11px);
 
 
     @include MOBILE {
       width: 257px;
       height: 110px;
-
       background: rgba(255, 255, 255, 0.6);
-      border-radius: 10.903px;
-      margin: 0 0 0 30px;
+      text-align: left;
     }
 
     &_1 {
       width: 330px;
       height: 192px;
+      padding: 20px 17px;
+
       background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
       linear-gradient(0deg, #FFFFFF, #FFFFFF);
       border: 1px solid;
@@ -120,140 +56,89 @@
 
 
       .main__card-title {
-        height: 78px;
-        width: 286px;
-
+        width: 180px;
         font-size: 20px;
         line-height: 24px;
       }
 
       .main__card-subtitle {
-        height: 26px;
         line-height: 20px;
       }
 
       .main__card-date {
-        height: 20px;
+        width: 150px;
       }
-    }
-
-    &_2 {
-      left: 353px;
-    }
-
-    &_3 {
-      left: 516px;
     }
   }
 
   &__card-order {
-    position: absolute;
-    width: 122px;
-    height: 28px;
-    left: 11px;
-    top: 14px;
-
-    padding-left: 3px;
-    padding-top: 3px;
-
     background: #E12D2D;
-    border-radius: 20px;
 
-    @include MOBILE {
-      width: 89px;
-      height: 22px;
-      left: 12px;
-      top: 10px;
-      border-radius: 15.5758px;
-
-      font-size: 10px;
-      line-height: 16px;
-    }
+    @include option(font-size, 16px, 10px);
+    @include option(line-height, 20px, 16px);
+    @include option(border-radius, 20px, 15.5758px);
+    @include option(width, 122px, 89px);
+    @include option(padding, 3px 0 0 3px, 0);
 
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
   }
 
   &__card-title {
-    width: 122px;
-    position: absolute;
-    height: 78px;
-    top: 50px;
-    left: 11px;
-
-    font-size: 14px;
-    line-height: 18px;
     font-weight: 600;
+    @include option(font-size, 14px, 17px);
+    @include option(line-height, 18px, 20px);
+    @include option(width, 75px, 167px);
+    @include option(margin, 10px 0, 5px 0);
 
     color: #000000;
 
     @include MOBILE {
-      width: 167px;
-      top: 40px;
-      left: 12px;
       font-weight: 500;
-      font-size: 17px;
-      line-height: 20px;
     }
   }
 
   &__card-subtitle {
-    position: absolute;
-    height: 26px;
-    width: 111px;
-    top: 115px;
-    left: 11px;
-
-    font-weight: 600;
-    font-size: 12px;
+    margin: 10px 0;
     line-height: 16px;
+    font-weight: 600;
+    @include option(width, 111px, 209px);
+    @include option(font-size, 12px, 10px);
 
     text-transform: uppercase;
     color: #E12D2D;
 
     @include MOBILE {
-      width: 209px;
-      font-weight: 400;
-      font-size: 10px;
       color: #350296;
-      top: 82px;
-      left: 12px;
+      font-weight: 400;
     }
   }
 
   &__card-date {
     position: absolute;
-    height: 30px;
-    bottom: 8px;
-    left: 11px;
-
     font-weight: 400;
-    font-size: 12px;
     line-height: 16px;
 
     color: rgba(0, 0, 0, 0.44);
+    @include option(width, 90px, 135px);
+    bottom: 8px;
+    right: 148px;
+    @include option(font-size, 12px, 10px);
 
     @include MOBILE {
-      width: 135px;
-      bottom: 70px;
-      left: 110px;
-
-      font-size: 10px;
       text-align: right;
+      bottom: 80px;
+      right: 12px;
       color: #350296;
     }
   }
 
   &__chanel {
-    position: absolute;
-    width: 501px;
-    height: 67px;
-    left: 201px;
-    top: 855px;
+    @include option(width, 501px, 257px);
+    @include option(margin, 24px 0 15px 0, 24px 0 15px 0);
+    display: flex;
 
     @include MOBILE {
       position: absolute;
@@ -261,6 +146,7 @@
       height: 39px;
       left: 17px;
       top: 552px;
+
       img {
         width: 39px;
         height: 39px;
@@ -269,52 +155,35 @@
   }
 
   &__chanel-text {
-    position: relative;
-    width: 300px;
-    left: 95px;
-    top: -60px;
-
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
+
+    @include option(font-size, 16px, 10px);
+    @include option(line-height, 22px, 16px);
+    @include option(padding, 12px 0 0 28px, 7px 0 0 12px);
+    @include option(width, 300px, 180px);
+
     color: #212121;
 
     @include MOBILE {
       font-weight: 400;
-      font-size: 10px;
-      line-height: 16px;
       color: #141D3A;
-      left: 53px;
-      top: -41px;
     }
   }
 
   &__carousel {
     display: none;
+    @include option(width, 360px);
+    margin: 18px 0 14px 0;
+    overflow: visible;
+
     @include MOBILE {
       display: block;
     }
-
-    height: 110px;
-    width: 100%;
-    top: 365px;
 
 
     .swiper-slide-active {
       .main__card {
         background: #FFFFFF;
-      }
-    }
-
-    .swiper-slide-next {
-      .main__card {
-        transform: translateX(-86px);
-      }
-    }
-
-    .swiper-slide-prev {
-      .main__card {
-        transform: translateX(89px);
       }
     }
   }
@@ -328,4 +197,11 @@
     right: 19px;
     top: 35px;
   }
+
+  &__button {
+    @include MOBILE {
+      margin: 10px 0 100px 0;
+    }
+  }
+
 }

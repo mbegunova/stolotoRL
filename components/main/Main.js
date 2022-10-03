@@ -33,7 +33,13 @@ export function Main({bg, list, menu, imageList, title, images, chanel, button, 
     <Title title={title} className={"title-main"}/>
     {ImageList()}
     <Menu list={menu}/>
-    <Carousel itemsData={list} item={Card} className={"main__carousel"} settings={{slidesPerView: 1}}/>
+    <Carousel itemsData={list} item={Card}
+              settings={{
+                className: "main__carousel",
+                slidesPerView: 1.3,
+                centeredSlides: true,
+                spaceBetween: 10,
+              }}/>
     <div className={"main__cards"}>
       {cards()}
     </div>
@@ -41,7 +47,11 @@ export function Main({bg, list, menu, imageList, title, images, chanel, button, 
       <img src={chanel.image}/>
       <div className={"main__chanel-text"}>{chanel.text}</div>
     </div>
-    <Button {...button} className={"main__button"}/>
+    <Button className={"main__button"}>
+      <div className={"main__button-text"}>
+        {button.text}
+      </div>
+    </Button>
     <div className={"main__burger"}>
       <img src={burger}/>
     </div>

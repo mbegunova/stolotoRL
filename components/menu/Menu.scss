@@ -1,21 +1,24 @@
 .menu {
   position: absolute;
-  top: 34.5px;
-  left: 766.99px;
-
+  @include option(top, 34.5px);
+  @include option(right, 130px);
+  @include option(width, 952px, 0);
 
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
   line-height: 30.12px;
-  width: 952px;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 
-  &__item {
+  &__link {
     text-decoration: none;
+  }
 
+  @include MOBILE{
+    display: none;
   }
 }

@@ -39,14 +39,3 @@
     line-height: 16px;
   }
 }
-
-.main__button {
-  position: absolute;
-  left: 781px;
-  top: 937px;
-
-  @include MOBILE {
-    left: 4.44%;
-    top: 440px;
-  }
-}

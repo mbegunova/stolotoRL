@@ -1,59 +1,38 @@
 .title {
-  width: 860px;
   height: 69px;
 
   font-style: normal;
   font-weight: 700;
-  font-size: 73px;
   line-height: 95%;
 
-  @include MOBILE {
-    font-size: 32px;
-    line-height: 36px;
-    margin: 20px 0 0 16px;
-  }
+  @include option(font-size, 73px, 32px);
+  @include option(line-height, 81px, 36px);
+  @include option(margin, 0, 20px 0 0 16px);
+  @include option(width, 860px, 324px);
 
   color: #141D3A;
   margin: 150px 0 0 198px;
 
   &-main {
-    margin: 210px 0 0 198px;
-
-    @include MOBILE {
-      position: absolute;
-      margin: 209px 0 0 16px;
-    }
+    @include option(margin, 210px 0 0 0, 209px 0 0 0);
   }
 
   &-winners {
-    margin: 48px 0 0 193px;
-
-    @include MOBILE {
-      margin: 38px 0 0 13px;
-    }
+    @include option(margin, 48px 0 0 193px, 38px 0 0 13px);
   }
 
   &-rules {
-    margin: 28px 0 0 198px;
-
-    @include MOBILE {
-      margin: 17px 0 0 13px;
-    }
+    @include option(margin, 28px 0 0 198px, 17px 0 0 13px);
   }
 
   &-info {
-    margin: 100px 0 0 198px;
-
-    @include MOBILE {
-      margin: 17px 0 0 13px;
-    }
+    @include option(margin, 100px 0 0 198px, 17px 0 0 13px);
   }
 
   &-download-link {
-    margin: 120px 0 0 198px;
+    @include option(margin, 120px 0 0 198px, 210px 0 0 16px);
 
     @include MOBILE {
-      margin: 210px 0 0 16px;
       width: 324px;
       color: #FFFFFF;
     }
@@ -62,11 +41,10 @@
   &-prizes {
     position: absolute;
     color: #FFFFFF;
-    margin: 51px 0 0 198px;
+    @include option(margin,  51px 0 0 198px, 17px 0 0 13px);
 
     @include MOBILE {
       width: 324px;
-      margin: 17px 0 0 13px;
     }
   }
 }
