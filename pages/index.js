@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={"container"}>
       <Main {...mainContent}/>
-      {/*<Winners {...winnersContent}/>*/}
+      <Winners {...winnersContent}/>
       {/*<Rules {...rulesContent}/>*/}
       {/*<Info {...infoContent}/>*/}
       {/*<DownloadList {...downloadListContent}/>*/}
