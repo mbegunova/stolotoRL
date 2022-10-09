@@ -1,21 +1,33 @@
 .winners {
   position: relative;
-  padding: 13px 0;
 
-  background-image: url("/images/winners/sphera.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  @include MOBILE{
-    background-image: url("/images/winners/mSphera.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  @include DESKTOP {
+    height: 1080px;
+    top: -150px;
   }
 
+  &__bg {
+    width: 90%;
+    @include option(height, 874px, 422px);
+    @include option(top, -35px, 0);
+    @include option(left, 127px, -69px);
+    position: absolute;
+    background-image: url("/images/winners/sphera.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+
+    @include MOBILE {
+      width: 118%;
+      background-image: url("/images/winners/mSphera.png");
+    }
+  }
+
+
   &__carousel {
-    width: 100%;
-    @include option(margin, 61px auto 150px auto, -12px auto 130px auto);
+    @include option(top, 178px, 65px);
+    @include option(margin, 178px auto 150px auto, -12px auto 130px auto);
   }
 
   &__item {
@@ -47,7 +59,7 @@
 
     @include option(font-size, 20px, 17px);
     @include option(line-height, 24px);
-    @include option(margin, 35px 0 2px 0);
+    @include option(margin, 35px 0 2px 0, 16px 0 2px 0);
     color: #141D3A;
 
     flex: none;
@@ -78,7 +90,13 @@
 
   &__nav {
     @include option(width, 259px, 335px);
-    @include option(margin, 0 auto, -100px auto 0 auto);
+    @include option(top, 865px, 431px);
+
+    @include DESKTOP {
+      position: absolute;
+    }
+    left: 43%;
+    @include option(margin, 0 auto, -50px auto 0 auto);
 
     display: flex;
     justify-content: center;
@@ -88,7 +106,6 @@
     .swiper-button-disabled {
       opacity: 0.7;
     }
-
   }
 
   &__nav-el {
@@ -143,7 +160,7 @@
       margin: 0;
       position: absolute;
       left: 70%;
-      top: 980px;
+      top: 873.98px;
     }
   }
 

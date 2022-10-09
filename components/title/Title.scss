@@ -15,14 +15,17 @@
 
   &-main {
     @include option(margin, 210px 0 0 0, 209px 0 0 0);
+    @include option(width, 767px, 324px);
+    @include option(height, 162px, auto);
   }
 
   &-winners {
-    @include option(margin, 120px 0 0 193px, 38px 0 0 13px);
+    position: absolute;
+    @include option(margin, 48px 0 0 193px, 16px 0 0 13px);
   }
 
   &-rules {
-    @include option(margin, 28px 0 0 198px, 17px 0 0 13px);
+    @include option(margin, 28px 0 0 198px, 94px 0 0 13px);
   }
 
   &-info {
@@ -41,7 +44,7 @@
   &-prizes {
     position: absolute;
     color: #FFFFFF;
-    @include option(margin,  51px 0 0 198px, 17px 0 0 13px);
+    @include option(margin, 51px 0 0 198px, 17px 0 0 13px);
 
     @include MOBILE {
       width: 324px;

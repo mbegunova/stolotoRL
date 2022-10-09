@@ -2,8 +2,13 @@
   @include option(padding, 0 200px, 30px 16px);
 
   &__prize {
-    @include option(margin, 40px 0, 0);
-    @include option(width, 841.34px, 327.78px);
+    @include option(margin, 40px 0 40px -58px, 0);
+    width: 55%;
+    //@include option(width, 841.34px, 327.78px);
+
+    @include MOBILE {
+      width: 91%;
+    }
   }
 
   &__logo {

@@ -15,6 +15,7 @@ export function Winners({ list, title, iconNav, sign, icons }) {
   }
 
   return (<div className={"winners"}>
+    <div className={"winners__bg"}/>
     <Title title={title} className={"title-winners"} />
     <Carousel itemsData={list} item={WinnerItem} settings={{
       onSlideChange: (swiper) => {
@@ -25,7 +26,6 @@ export function Winners({ list, title, iconNav, sign, icons }) {
         320: {
           slidesPerView: 1.3,
           centeredSlides: true
-          // spaceBetween: 20
         },
         1024: {
           slidesPerView: 3
