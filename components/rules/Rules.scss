@@ -210,4 +210,16 @@
   &__button {
     @include option(margin, 40px auto 0 auto)
   }
+
+  &__button-text {
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__button-textM {
+    @include DESKTOP {
+      display: none;
+    }
+  }
 }

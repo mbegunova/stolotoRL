@@ -1,55 +1,44 @@
 .download-list {
   position: relative;
+  @include option(margin, 0 0 500px 0, 0 0 70px 0);
 
-  margin: 0 0 500px 0;
-
-  @include MOBILE {
-    margin: 0 0 70px 0;
-  }
 
   &__list {
     font-weight: 500;
-    font-size: 36px;
-    line-height: 130%;
     letter-spacing: -2px;
     color: #141D3A;
 
-    margin: 183px 0 0 198px;
+
+    @include option(font-size, 36px, 17px);
+    @include option(line-height, 47px, 20px);
+    @include option(margin, 183px 0 0 198px, 100px auto 45px auto);
 
     @include MOBILE {
       color: #FFFFFF;
-      width: 330px;
+      width: 92%;
       letter-spacing: normal;
-      font-size: 17px;
-      line-height: 20px;
 
       display: flex;
       flex-wrap: wrap;
-      margin: 100px auto 45px auto;
     }
   }
 
   &__item {
-    width: 721px;
-    height: 49px;
+    @include option(width, 721px, 161px);
+    @include option(height, 49px, 60px);
+    @include option(margin, 20px 4px 20px 0);
 
-    margin: 20px 4px 20px 0;
     align-items: center;
 
     display: flex;
 
-    @include MOBILE {
-      width: 161px;
-      height: 60px;
-    }
   }
 
   &__item-img {
-    margin: auto 38px auto 0;
+    @include option(margin, auto 38px auto 0, 0 13px 23px 0);
 
 
     @include MOBILE {
-      margin: 0 13px 23px 0;
       img {
         width: 24px;
         height: 29.33px;
@@ -59,83 +48,87 @@
   }
 
   &__item-text {
-    @include MOBILE {
-      width: 124px;
-      height: 60px;
-    }
+    @include option(width, 737px, 124px);
   }
 
   &__load-button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 13.903px 37.9173px;
-    gap: 13.9px;
 
+    @include option(width, 395px);
+    @include option(height, 81px);
+    @include option(padding, 13.903px 37.9173px);
+    @include option(margin, 30px 0);
+    @include option(gap, 13.9px);
 
-    width: 395px;
-    height: 81px;
     border: none;
 
     background: #FFDA00;
     border-radius: 38px;
 
-    margin: 30px 0;
     cursor: pointer;
+
     @include MOBILE {
       display: none;
     }
   }
 
   &__icons {
-    @include DESKTOP {
-      display: none;
+    display: none;
+    @include MOBILE {
+      display: flex;
+      width: fit-content;
+      margin: 0 auto;
     }
-
-    width: 95%;
-    display: flex;
-    margin: 0 auto;
   }
 
   &__icon {
+    img {
+      @include option(width, 44.24px, 70px);
+    }
+
     @include MOBILE {
       margin: 0 8px;
       background: #FFFFFF;
       border-radius: 6.31956px;
-
-      img {
-        width: 70px;
-      }
     }
   }
 
   &__load-text {
-
-    width: 87px;
-    height: 21px;
+    @include option(width, 87px);
+    @include option(line-height, 20px);
+    @include option(font-size, 20px);
 
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
     text-align: center;
     color: #141D3A;
 
     flex: none;
     order: 0;
     flex-grow: 0;
-
   }
 
   &__image {
     position: absolute;
-    top: 290px;
-    left: 1115px
+    @include option(top, 203px);
+    @include option(left, 1115px);
+    width: 100%;
+
+    img {
+      width: 32%;
+    }
+
+
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__button {
     position: absolute;
-    top: 940px;
-    left: 786px;
+    @include option(top, 940px);
+    @include option(left, 786px);
   }
 
   &__buttons-list {
