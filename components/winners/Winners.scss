@@ -159,8 +159,8 @@
     @include DESKTOP {
       margin: 0;
       position: absolute;
-      left: 70%;
-      top: 873.98px;
+      @include option(left, 1363px);
+      @include option(top, 873.98px);
     }
   }
 

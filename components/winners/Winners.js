@@ -1,11 +1,12 @@
 import { WinnerItem } from "./WinnerItem";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Title from "../title/Title";
 import Carousel from "../baseComponents/gui/carousel/Carousel";
 
 export function Winners({ list, title, iconNav, sign, icons }) {
   const [activeSlide, setActive] = useState(0);
-
+  const prevRefNavigation = useRef();
+  const nextRefNavigation = useRef();
 
   function Icons() {
     return icons.map((img, i) => (
@@ -17,7 +18,10 @@ export function Winners({ list, title, iconNav, sign, icons }) {
   return (<div className={"winners"}>
     <div className={"winners__bg"}/>
     <Title title={title} className={"title-winners"} />
-    <Carousel itemsData={list} item={WinnerItem} settings={{
+    <Carousel itemsData={list} item={WinnerItem}
+              prevRefNavigation={prevRefNavigation}
+              nextRefNavigation={nextRefNavigation}
+              settings={{
       onSlideChange: (swiper) => {
         setActive(swiper.activeIndex);
       },
@@ -33,11 +37,11 @@ export function Winners({ list, title, iconNav, sign, icons }) {
       }
     }} />
     <div className={"winners__nav"}>
-      <div className={"winners__nav-el winners__nav-prev swiper-button-prev"}>
+      <div className={"winners__nav-el winners__nav-prev swiper-button-prev"} ref={prevRefNavigation}>
         <img src={iconNav} />
       </div>
       <div className={"winners__nav-text"}>{`${activeSlide + 1}................${list.length}`}</div>
-      <div className={"winners__nav-el winners__nav-next swiper-button-next"}>
+      <div className={"winners__nav-el winners__nav-next swiper-button-next"} ref={nextRefNavigation}>
         <img src={iconNav} />
       </div>
     </div>

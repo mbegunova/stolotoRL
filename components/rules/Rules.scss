@@ -9,8 +9,7 @@
 
 
   &__carousel {
-    @include option(padding, 50px 0 72px 0, 0);
-    @include option(margin, 50px 0, -20px 0 0 0);
+    @include option(margin, 50px 0 40px 0, 20px 0 0 0);
     @include option(height, 607px, 400px);
     width: 100%;
     user-select: none;
@@ -23,12 +22,13 @@
       @include option(width, 1135px, 257px);
       background: linear-gradient(180deg, #4C2B94 0%, rgba(76, 43, 148, 0) 100%), linear-gradient(180deg, #A75FDC 0%, #A34881 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
-      border-radius: 44px;
-      border: 2px solid #A75FDCFF;
+      @include option(border-radius, 44px, 20px);
+
+      border: none;
 
       color: #FFFFFF;
 
-      @include DESKTOP{
+      @include DESKTOP {
         transform: translateX(0);
       }
 
@@ -46,12 +46,16 @@
 
       &__item-text {
         @include DESKTOP {
-          width: 595.95px;
+          @include option(width, 595.95px);
         }
       }
 
       &__item-image {
         display: block;
+      }
+
+      &__item-hr {
+        @include option(width, 1062px);
       }
     }
   }
@@ -72,7 +76,7 @@
     border-radius: 44px;
     color: #141D3A;
 
-    @include DESKTOP{
+    @include DESKTOP {
       transform: translateX(-76%);
     }
   }
@@ -95,7 +99,7 @@
 
   &__item-hr {
     display: block;
-    @include option(width, 1062px);
+    @include option(width, 458px);
     @include option(top, 134px);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -203,4 +207,7 @@
     color: #141D3A;
   }
 
+  &__button {
+    @include option(margin, 40px auto 0 auto)
+  }
 }
