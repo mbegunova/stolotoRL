@@ -58,7 +58,11 @@ export const winnersContent = {
     iconNav: "images/winners/next.svg",
     title: "Наши победители",
     sign: "Ещё больше историй смотрите в соцсетях",
-    icons: ["images/winners/icon1.png", "images/winners/icon2.png", "images/winners/icon3.png", "images/winners/icon4.png",],
+    icons: [
+      "images/winners/icon1.svg",
+      "images/winners/icon2.svg",
+      "images/winners/icon3.svg",
+      "images/winners/icon4.svg",],
 
 }
 

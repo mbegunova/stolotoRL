@@ -4,29 +4,11 @@
 
   &__carousel {
     width: 100%;
-    margin: 54px auto 130px auto;
-
-    @include MOBILE {
-      width: 100%;
-      margin: -12px auto 130px auto;
-      height: 334.78px;
-
-      .swiper-slide-next {
-        .winners__item {
-          transform: translateX(-88px);
-        }
-      }
-
-      .swiper-slide-prev {
-        .winners__item {
-          transform: translateX(88px);
-        }
-      }
-    }
+    @include option(margin, 54px auto 130px auto, -12px auto 130px auto);
   }
 
   &__item {
-    width: 100%;
+    @include option(width, 526px, 259.8px);
     height: 100%;
     display: flex;
     align-items: center;
@@ -36,32 +18,24 @@
     pointer-events: none;
 
     text-align: center;
-    @include MOBILE {
-      transition: transform .1s ease-in-out;
-    }
   }
 
   &__item-image {
-    width: 424px;
-    height: 424px;
+    @include option(width, 424px, 260px);
+    @include option(height, 424px, 260px);
 
     background: linear-gradient(180deg, #DED4D6 0%, #DFD3D3 100%);
     box-shadow: 9px 12px 21px rgba(95, 0, 0, 0.15);
     border-radius: 300px;
-
-    @include MOBILE {
-      width: 260px;
-      height: 260px;
-    }
   }
 
   &__item-name {
     height: 27px;
 
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
 
+    @include option(font-size, 20px, 17px);
+    @include option(line-height, 24px);
     color: #141D3A;
 
     flex: none;
@@ -70,8 +44,6 @@
 
     @include MOBILE {
       font-weight: 400;
-      font-size: 17px;
-      line-height: 24px;
     }
   }
 
@@ -80,25 +52,22 @@
     height: 63px;
 
     font-weight: 700;
-    font-size: 54px;
     line-height: 116%;
+    @include option(font-size, 54px, 29px);
 
     flex: none;
     order: 0;
     flex-grow: 0;
 
     @include MOBILE {
-      font-size: 29px;
-
       letter-spacing: 1.07573px;
       text-transform: uppercase;
     }
   }
 
   &__nav {
-    width: 259px;
-    height: 45px;
-    margin: 0 auto;
+    @include option(width, 259px, 335px);
+    @include option(margin, 0 auto, -100px auto 0 auto);
 
     display: flex;
     justify-content: center;
@@ -109,15 +78,11 @@
       opacity: 0.7;
     }
 
-    @include MOBILE {
-      width: 90%;
-      margin: -100px auto 0 auto;
-    }
   }
 
   &__nav-el {
-    width: 45px;
-    height: 45px;
+    @include option(width, 45px);
+    @include option(height, 45px);
 
     background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -127,7 +92,7 @@
     align-items: center;
 
     img {
-      height: 15.37px;
+      @include option(height, 15.37px);
     }
   }
 
@@ -145,48 +110,47 @@
 
   &__nav-text {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    @include option(font-size, 20px);
+    @include option(line-height, 20px);
     margin: auto;
     color: #141D3A;
   }
 
   &__sign {
-    width: 206px;
-    height: 44px;
-    margin: -25px 0 23px 1190px;
+    margin: 12px auto;
+    width: max-content;
+    @include option(font-size, 16px, 10px);
+    @include option(line-height, 22px, 16px);
 
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-
     color: #141D3A;
-
     @include MOBILE {
-      width: 326px;
-      height: 13px;
       font-weight: 400;
-      font-size: 10px;
-      line-height: 16px;
-      margin: 19px;
+    }
+
+    @include DESKTOP {
+      margin: 0;
+      position: absolute;
+      left: 70%;
+      top: 773.98px;
+    }
+  }
+
+  &__sign-text {
+    @include DESKTOP {
+      @include option(width, 203px);
     }
   }
 
   &__icons {
-    margin: 0 1186px 0 1190px;
-    width: 500px;
-    height: 70px;
-
-    @include MOBILE {
-      margin: 0 16px;
-    }
+    @include option(margin, 26px 0, 9px 0);
+    width: max-content;
   }
 
   &__icon {
-    width: 65.54px;
-    height: 65.54px;
-    margin: 0 16px 0 0;
+    @include option(width, 65.54px);
+    @include option(height, 65.54px);
+    @include option(margin, 0 31.5px 0 0, 0 16px 0 0);
   }
 
 
