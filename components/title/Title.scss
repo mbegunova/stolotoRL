@@ -29,7 +29,7 @@
   }
 
   &-info {
-    @include option(margin, 100px 0 0 198px, 17px 0 0 13px);
+    @include option(margin, 100px 0 0 198px, 17px 0 0 0);
   }
 
   &-download-link {
