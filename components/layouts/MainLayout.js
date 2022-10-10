@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import CustomHeader from '../baseComponents/gui/customHeader/CustomHeader';
 import {footerContent, header} from "../../constants/copyright";
 import {node} from "prop-types";
 import {modalStorage} from "../../redux/reducer/modals";
@@ -16,7 +15,7 @@ export default function MainLayout({children}) {
       <input type={"checkbox"} className={"custom-header__input"} id={"menu-burger"}/>
       <div className={'main-container'}>
         <div className={'content-wrapper'}>{children}</div>
-        {/*<Footer {...footerContent}/>*/}
+        <Footer {...footerContent}/>
       </div>
       <ModalController modalStorage={modalStorage}/>
     </>

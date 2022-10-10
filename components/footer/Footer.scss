@@ -1,59 +1,49 @@
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: #0F1114;
 
-  height: 840px;
+  @include option(height, 840px, 546px);
+  @include option(font-size, 13.3333px, 8.19259px);
+  @include option(line-height, 18px, 12px);
   color: #7F858A;
+
 
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 13.3333px;
-  line-height: 18px;
 
-  @include MOBILE {
-    width: 100%;
-    height: 546px;
-
-    font-size: 8.19259px;
-    line-height: 12px;
-  }
 
   &__logo {
     position: absolute;
-    width: 186.67px;
-    height: 52.24px;
-    left: 208px;
-    top: 228px;
 
-    @include MOBILE {
-      left: 17.5px;
-      top: 17.5px;
+    img {
+      @include option(width, 186.67px, 114.7px);
+      @include option(height, 52.24px, 31.95px);
     }
+
+    @include option(left, 208px, 17.5px);
+    @include option(top, 228px, 17.5px);
+
   }
 
   &__main-text {
     position: absolute;
-    width: 904px;
-    height: 126px;
-    left: 208px;
-    top: 310px;
+    font-size: inherit;
+    line-height: inherit;
+    @include option(width, 904px, 281.01);
+    //width: 281.01px;
+    @include option(left, 208px, 16.3px);
+    @include option(top, 310px, 64px);
 
-    @include MOBILE {
-      left: 16.3px;
-      top: 82px;
-      width: 281.01px;
-    }
   }
 
   &__icons {
     position: absolute;
-    width: 219.52px;
-    height: 35.38px;
-    left: 208px;
-    top: 686px;
+    @include option(width, 219.52px);
+    @include option(left, 208px);
+    @include option(top, 686px);
 
     display: flex;
     justify-content: space-between;
@@ -63,11 +53,12 @@
     }
 
     &_mob {
-      top: 288px;
-      left: 16px;
-      display: flex;
-      @include DESKTOP {
-        display: none;
+      @include option(left, 16px);
+      @include option(top, 288px);
+      display: none;
+
+      @include MOBILE {
+        display: flex;
       }
     }
   }
@@ -79,72 +70,68 @@
 
   &__content {
     position: absolute;
-    width: 448px;
-    left: 1204px;
-    top: 228px;
+    @include option(width, 448px);
+    @include option(left, 1204px, 16.5px);
+    @include option(top, 228px, 327px);
 
-    @include MOBILE {
-      left: 16.5px;
-      top: 327px;
-    }
   }
 
   &__images {
     position: relative;
     display: flex;
-    margin-bottom: 27px;
 
-    img {
-      margin-right: 29px;
+    &_emblem {
+      @include MOBILE {
+        position: absolute;
+      }
+
+      img {
+        @include option(width, 46.67px, 23.76px);
+        @include option(height, 50.9px, 25.4px);
+        @include option(margin, 30px 30px 25px 0, 9px);
+      }
     }
 
-    @include MOBILE {
+    &_partners {
+      @include option(margin, 25px 0);
 
-      &_emblem {
-        position: absolute;
+      img {
+        @include option(margin-right, 30px);
+      }
 
+      .footer__image_1 {
         img {
-          width: 23.76px;
-          height: 25.4px;
-          margin-right: 9px;
+          @include option(width, 120px, 51.61px);
+          @include option(height, 32.15px, 13.93px);
         }
       }
 
-      &_partners {
+      .footer__image_2 {
+        img {
+          @include option(width, 120px, 61.44px);
+          @include option(height, 44.2px, 31.95px);
+
+        }
+      }
+
+      @include MOBILE {
         position: absolute;
-        top: 36px;
         flex-direction: column;
-
-        img {
-          margin: 7px 0;
-        }
-
-        .footer__image_1 {
-          img {
-            width: 51.61px;
-            height: 13.93px;
-          }
-        }
-
-        .footer__image_2 {
-          img {
-            width: 61.44px;
-            height: 31.95px;
-          }
-        }
       }
     }
+
   }
 
   &__text {
     position: relative;
-    margin-bottom: 27px;
+    font-size: inherit;
+    line-height: inherit;
+    @include option(margin-bottom, 27px, 11.5px);
+    @include option(left, 0, 92px);
+    @include option(width, 448px, 204px);
 
     @include MOBILE {
-      width: 197.27px;
-      left: 92px;
       white-space: normal;
-      margin-bottom: 11.5px;
     }
 
     &_white {
@@ -155,12 +142,15 @@
   &__hr {
     display: none;
     position: absolute;
-    width: 283.46px;
-    height: 0px;
-    left: 16.27px;
-    top: 279px;
 
-    border: 0.204815px solid #FFFFFF;
+    @include option(width, 283.46px);
+    @include option(left, 16.27px);
+    @include option(top, 278px);
+
+    background-color: #FFFFFF;
+    border: 0 none;
+    height: 0.2px;
+    opacity: .5;
 
     @include MOBILE {
       display: block;

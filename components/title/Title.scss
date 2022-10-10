@@ -45,10 +45,8 @@
   &-prizes {
     position: absolute;
     color: #FFFFFF;
-    @include option(margin, 51px 0 0 198px, 17px 0 0 13px);
+    @include option(margin, 151px 0 0 198px, 17px 0 0 13px);
+    @include option(width, 800px, 324px);
 
-    @include MOBILE {
-      width: 324px;
-    }
   }
 }

@@ -1,7 +1,6 @@
 import {Main} from "/components/main/Main";
 import {
   downloadListContent,
-  footerContent,
   infoContent,
   mainContent, prizesContent,
   rulesContent,
@@ -21,7 +20,7 @@ export default function Home() {
       <Rules {...rulesContent}/>
       <Info {...infoContent}/>
       <DownloadList {...downloadListContent}/>
-      {/*<Prizes {...prizesContent}/>*/}
+      <Prizes {...prizesContent}/>
     </div>
   )
 }
