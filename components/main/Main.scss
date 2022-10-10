@@ -19,7 +19,7 @@
   }
 
   &__cards {
-    width: 656px;
+    @include option(width, 656px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,8 +32,8 @@
   &__card {
     box-sizing: border-box;
     position: relative;
-    width: 148px;
-    height: 192px;
+    @include option(width, 148px, 257px);
+    @include option(height, 192px, 110px);
 
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
@@ -43,16 +43,13 @@
 
 
     @include MOBILE {
-      width: 257px;
-      height: 110px;
       background: rgba(255, 255, 255, 0.6);
       text-align: left;
     }
 
     &_1 {
-      width: 330px;
-      height: 192px;
-      padding: 20px 17px;
+      @include option(width, 330px, 257px);
+      @include option(padding, 20px 17px, 14px 11px);
 
       background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
       linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -61,17 +58,17 @@
 
 
       .main__card-title {
-        width: 180px;
-        font-size: 20px;
-        line-height: 24px;
+        @include option(width, 180px);
+        @include option(font-size, 20px);
+        @include option(line-height, 24px);
       }
 
       .main__card-subtitle {
-        line-height: 20px;
+        @include option(line-height, 20px);
       }
 
       .main__card-date {
-        width: 150px;
+        @include option(width, 150px);
       }
     }
   }
@@ -127,15 +124,18 @@
     line-height: 16px;
 
     color: rgba(0, 0, 0, 0.44);
+    @include option(line-height, 16px);
     @include option(width, 90px, 135px);
-    bottom: 8px;
-    right: 148px;
+
+    @include option(bottom, 8px, auto);
+    @include option(left, 11px, auto);
+    @include option(top, auto, 14px);
+    @include option(right, auto, 12px);
+
     @include option(font-size, 12px, 10px);
 
     @include MOBILE {
       text-align: right;
-      bottom: 80px;
-      right: 12px;
       color: #350296;
     }
   }
@@ -145,17 +145,15 @@
     @include option(margin, 24px 0 15px 0, 24px 0 15px 0);
     display: flex;
 
+    img {
+      @include option(width, 67px, 39px);
+      @include option(height, 67px, 39px);
+    }
+
     @include MOBILE {
       position: absolute;
-      width: 257px;
-      height: 39px;
-      left: 17px;
-      top: 552px;
-
-      img {
-        width: 39px;
-        height: 39px;
-      }
+      @include option(left, 17px);
+      @include option(top, 552px);
     }
   }
 
@@ -205,7 +203,7 @@
 
   &__button {
     @include MOBILE {
-      margin: 10px 0 100px 0;
+      margin: 10px auto 100px auto;
     }
   }
 
