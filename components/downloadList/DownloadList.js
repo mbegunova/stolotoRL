@@ -24,7 +24,7 @@ export function DownloadList({ list, title, button, loadButton, image, buttons }
     </Button>));
   }
 
-  return (<div className={"download-list"}>
+  return (<section className={"download-list"}>
     <Title title={title} className={"title-download-list"} />
     <div className={"download-list__list"}>
       {items()}
@@ -45,5 +45,5 @@ export function DownloadList({ list, title, button, loadButton, image, buttons }
     <div className={"download-list__buttons-list"}>
       {mButtons()}
     </div>
-  </div>);
+  </section>);
 }

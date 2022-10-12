@@ -2,14 +2,11 @@ import { useRef, useState } from "react";
 import Title from "../title/Title";
 import Carousel from "../baseComponents/gui/carousel/Carousel";
 import Button from "../baseComponents/gui/button/Button";
-import { isMobile } from "../../utils/detector/detector";
 
 export function Rules({ list, title, iconNav, button, mButton }) {
   const [active, setActive] = useState(null);
   const prevRefNavigation = useRef();
   const nextRefNavigation = useRef();
-
-  const isMob = isMobile();
 
   function RulesItem({ title, text, num, image }) {
     return (<div className={"rules__item"}>
@@ -24,7 +21,7 @@ export function Rules({ list, title, iconNav, button, mButton }) {
 
 
   return (
-    <div className={"rules"}>
+    <section className={"rules"}>
       <Title title={title} className={"title-rules"} />
       <Carousel itemsData={list} item={RulesItem}
                 prevRefNavigation={prevRefNavigation}
@@ -57,6 +54,6 @@ export function Rules({ list, title, iconNav, button, mButton }) {
         <div className={"rules__button-text"}>{button.text} </div>
         <div className={"rules__button-textM"}>{mButton.text} </div>
       </Button>
-    </div>
+    </section>
   );
 }

@@ -15,7 +15,7 @@ export function Winners({ list, title, iconNav, sign, icons }) {
       </a>));
   }
 
-  return (<div className={"winners"}>
+  return (<section className={"winners"}>
     <div className={"winners__bg"}/>
     <Title title={title} className={"title-winners"} />
     <Carousel itemsData={list} item={WinnerItem}
@@ -49,5 +49,5 @@ export function Winners({ list, title, iconNav, sign, icons }) {
       <div className={"winners__sign-text"}>{sign}</div>
       <div className={"winners__icons"}> {Icons()}</div>
     </div>
-  </div>);
+  </section>);
 }

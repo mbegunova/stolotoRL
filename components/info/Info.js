@@ -8,7 +8,7 @@ export function Info({ list, title, link }) {
     return list.map((data, index) => (<InfoItem {...data} key={index} />));
   }
 
-  return (<div className={"info"}>
+  return (<section className={"info"}>
     <Title title={title} className={"title-info"} />
     <div className={"info__list"}>
       {items()}
@@ -23,5 +23,5 @@ export function Info({ list, title, link }) {
       <div className={"info__link-text"}>{link.text}</div>
       <img className={"info__link-image"} src={link.icon} />
     </a>
-  </div>);
+  </section>);
 }
