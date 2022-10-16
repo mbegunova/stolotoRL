@@ -4,18 +4,10 @@
   &__prize {
     @include option(margin, 40px 0 40px -58px, 0);
     width: 55%;
-    //@include option(width, 841.34px, 327.78px);
 
     @include MOBILE {
       width: 91%;
     }
-  }
-
-  &__logo {
-    position: absolute;
-    @include option(top, 34px, 36px);
-    @include option(left, 200px, 16px);
-    @include option(width, 92px, 70px);
   }
 
   &__cards {
