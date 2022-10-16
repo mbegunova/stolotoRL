@@ -23,6 +23,7 @@
   display: flex;
   flex-grow: 1;
   overflow: hidden;
+  z-index: 0;
 }
 
 #menu-burger:checked + .main-container {
