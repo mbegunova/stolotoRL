@@ -15,7 +15,7 @@
   margin: 150px 0 0 198px;
 
   &-main {
-    @include option(margin, 210px 0 0 0, 209px 0 0 0);
+    @include option(margin, 210px 0 0 0, 82px 0 0 0);
     @include option(width, 767px, 324px);
     @include option(height, 162px, auto);
   }
