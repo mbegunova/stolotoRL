@@ -18,7 +18,7 @@ export default function MainLayout({children}) {
       <div className={'main-container'}>
           <CustomHeader {...header}/>
           <div className={'content-wrapper'}>{children}</div>
-          {/*<Footer  {...footerContent}/>*/}
+          <Footer  {...footerContent}/>
       </div>
       <ModalController modalStorage={modalStorage}/>
     </>
