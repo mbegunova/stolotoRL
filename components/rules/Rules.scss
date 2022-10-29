@@ -1,7 +1,6 @@
 .rules {
 
-  font-size: 40px;
-  color: #FFFFFF;
+  @extend %TEXT-3;
 
   @include DESKTOP {
     margin: -100px 0;
@@ -87,19 +86,15 @@
   }
 
   &__item-num {
+    @extend %TEXT-12;
     @include option(width, 84px, 37px);
     @include option(height, 83.91px, 37px);
-    @include option(line-height, 80px, 34px);
-    @include option(font-size, 40px, 17px);
+
 
     border-radius: 50%;
-
     text-align: center;
     display: inline-block;
-    font-weight: 700;
-
     background: #FFFFFF;
-    color: #FFDA00;
   }
 
   &__item-hr {
@@ -115,37 +110,26 @@
   }
 
   &__item-title {
-    font-weight: 700;
+    @extend %TEXT-3;
 
     //@include option(width, 360px, 131px);
     @include option(left, 33px);
     @include option(top, 153px);
-    @include option(font-size, 40px, 17px);
 
     width: 68%;
 
     @include MOBILE {
-      font-weight: 700;
       width: 50%;
-      @include option-mob(line-height, 20px);
       @include option-mob(margin, 15px 0 10px 0);
     }
   }
 
   &__item-text {
+    @extend %TEXT-13;
     @include option(left, 33px);
-    //@include option(width, 455px);
     @include option(margin, 20px 0, 0);
-    @include option(line-height, 31px, 20px);
-    @include option(font-size, 24px, 17px);
-
-    font-weight: 400;
-    white-space: pre-line;
 
     width: 100%;
-    //@include MOBILE {
-    //  width: 100%;
-    //}
   }
 
   &__item-image {
@@ -214,11 +198,8 @@
   }
 
   &__nav-text {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    @extend %TEXT-14;
     margin: auto;
-    color: #141D3A;
   }
 
   &__button {

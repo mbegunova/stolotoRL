@@ -9,7 +9,7 @@
   color: #000000;
 }
 
-
+//  @extend %TEXT-1;
 
 %Question {
   font-family: $FONT;
@@ -18,3 +18,182 @@
   line-height: 1.2;
   text-transform: uppercase;
 }
+
+%TEXT-1 {
+  font-family: $FONT;
+  @include option(font-size, 73px, 32px);
+  @include option(line-height, 81px, 36px);
+  font-weight: 700;
+}
+
+%TEXT-2 {
+  font-family: $FONT;
+  @include option(font-size, 24px, 17px);
+  @include option(line-height, 31px, 20px);
+}
+
+%TEXT-3 {
+  font-family: $FONT;
+  @include option(line-height, 46px, 20px);
+  @include option(font-size, 40px, 17px);
+  font-weight: 700;
+}
+
+%TEXT-4 {
+  font-family: $FONT;
+  @include option(font-size, 36px, 17px);
+  @include option(line-height, 47px, 20px);
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #141D3A;
+
+  @include MOBILE {
+    letter-spacing: normal;
+  }
+}
+
+%TEXT-5 {
+  font-family: $FONT;
+  @include option(font-size, 20px, 16px);
+  @include option(line-height, 24px, 16px);
+  color: #141D3A;
+
+  font-weight: 700;
+  text-align: center;
+}
+
+%TEXT-6 {
+  font-family: $FONT;
+  @include option(font-size, 20px, 14px);
+  @include option(line-height, 30px, 21px);
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+%TEXT-7 {
+  font-family: $FONT;
+  @include option(font-size, 16px, 10px);
+  @include option(line-height, 20px, 16px);
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+%TEXT-8 {
+  font-family: $FONT;
+  font-weight: 600;
+  @include option(font-size, 14px, 17px);
+  @include option(line-height, 18px, 20px);
+
+  color: #000000;
+
+  @include MOBILE {
+    font-weight: 500;
+  }
+}
+
+%TEXT-9 {
+  font-family: $FONT;
+  @include option(font-size, 12px, 10px);
+  @include option(line-height, 16px);
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #E12D2D;
+
+  @include MOBILE {
+    color: #350296;
+    font-weight: 400;
+  }
+}
+
+%TEXT-10 {
+  font-family: $FONT;
+  color: rgba(0, 0, 0, 0.44);
+  @include option(font-size, 12px, 10px);
+  @include option(line-height, 16px);
+  font-weight: 400;
+
+  @include MOBILE{
+    color: #350296;
+  }
+}
+%TEXT-11 {
+  font-family: $FONT;
+  @include option(font-size, 16px, 10px);
+  @include option(line-height, 22px, 16px);
+  font-weight: 500;
+  color: #212121;
+
+  @include MOBILE {
+    font-weight: 400;
+    color: #141D3A;
+  }
+}
+%TEXT-12 {
+  font-family: $FONT;
+  @include option(line-height, 80px, 34px);
+  @include option(font-size, 40px, 17px);
+  font-weight: 700;
+  color: #FFDA00;
+}
+%TEXT-13 {
+  font-family: $FONT;
+  @include option(font-size, 24px, 17px);
+  @include option(line-height, 31px, 20px);
+  font-weight: 400;
+  white-space: pre-line;
+}
+%TEXT-14 {
+  font-family: $FONT;
+  @include option(font-size, 20px);
+  @include option(line-height, 20px);
+  font-weight: 700;
+  color: #141D3A;
+}
+%TEXT-15 {
+  font-family: $FONT;
+  font-weight: 600;
+  @include option(font-size, 20px, 17px);
+  @include option(line-height, 24px);
+  color: #141D3A;
+
+  @include MOBILE {
+    font-weight: 400;
+  }
+}
+%TEXT-16 {
+  font-family: $FONT;
+  @include option(font-size, 54px, 29px);
+  @include option(font-size, 63px, 34px);
+  font-weight: 700;
+
+
+  @include MOBILE {
+    letter-spacing: 1.07573px;
+    text-transform: uppercase;
+  }
+}
+%TEXT-17 {
+  font-family: $FONT;
+  @include option(font-size, 16px, 10px);
+  @include option(line-height, 22px, 16px);
+
+  font-weight: 500;
+  color: #141D3A;
+  @include MOBILE {
+    font-weight: 400;
+  }
+}
+%TEXT-18 {
+  font-family: $FONT2;
+  @include option(font-size, 13.3333px, 8.19259px);
+  @include option(line-height, 18px, 12px);
+  color: #7F858A;
+  font-weight: 400;
+
+  @include MOBILE {
+    white-space: normal;
+  }
+}
+

@@ -9,15 +9,13 @@
   background: #FFDA00;
   border: 0;
 
-  font-weight: 700;
-  text-align: center;
 
-  color: #141D3A;
+  @extend %TEXT-5;
+
   @include option(width, 358px, 328px);
   @include option(height, 82px, 48px);
   @include option(margin, 50px auto);
-  @include option(font-size, 20px, 16px);
-  @include option(line-height, 24px, 16px);
+
   @include option(padding, 15px 42px, 16px 24px);
   @include option(gap, 9px, 8px);
   @include option(border-radius, 13px, 12px);

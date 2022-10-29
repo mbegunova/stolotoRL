@@ -25,8 +25,7 @@
     @include option(margin, 15px, 0 auto);
     @include option(padding, 0, 30px 0 0 21px);
 
-    @include option(font-size, 24px, 17px);
-    @include option(line-height, 31px, 20px);
+    @extend %TEXT-2;
 
     display: block;
 
@@ -52,11 +51,10 @@
   }
 
   &__item-title {
+    @extend %TEXT-3;
+
     @include option(width, 439px, 177px);
     @include option(margin, 30px, 0);
-    @include option(line-height, 46px, 20px);
-    @include option(font-size, 40px, 17px);
-    font-weight: 700;
 
     @include DESKTOP {
       width: 60%;
@@ -86,6 +84,7 @@
   }
 
   &__link {
+    @extend %TEXT-6;
     position: absolute;
     left: 70%;
 
@@ -94,18 +93,10 @@
     }
 
     @include option(top, 25px, 593px);
-
     @include option(width, 176px, 175px);
     @include option(height, 56px, 35px);
 
-    @include option(font-size, 20px, 14px);
-
     align-items: center;
-
-    font-weight: 600;
-    line-height: 150%;
-
-    color: #FFFFFF;
     user-select: none;
     text-decoration: none;
   }

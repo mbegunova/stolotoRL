@@ -5,19 +5,13 @@
 
 
   &__list {
-    font-weight: 500;
-    letter-spacing: -2px;
-    color: #141D3A;
+    @extend %TEXT-4;
 
-
-    @include option(font-size, 36px, 17px);
-    @include option(line-height, 47px, 20px);
     @include option(margin, 183px 0 0 198px, 100px auto 45px auto);
 
     @include MOBILE {
       color: #FFFFFF;
       width: 92%;
-      letter-spacing: normal;
 
       display: flex;
       flex-wrap: wrap;
@@ -97,13 +91,8 @@
   }
 
   &__load-text {
-    @include option(width, 87px);
-    @include option(line-height, 20px);
-    @include option(font-size, 20px);
-
-    font-weight: 700;
+    @extend %TEXT-5;
     text-align: center;
-    color: #141D3A;
 
     flex: none;
     order: 0;

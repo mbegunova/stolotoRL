@@ -1,12 +1,6 @@
 .title {
   height: 69px;
-
-  font-style: normal;
-  font-weight: 700;
-  line-height: 95%;
-
-  @include option(font-size, 73px, 32px);
-  @include option(line-height, 81px, 36px);
+  @extend %TEXT-1;
   @include option(margin, 0, 20px 0 0 16px);
   @include option(width, 860px, 324px);
 

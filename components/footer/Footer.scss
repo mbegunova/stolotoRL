@@ -5,14 +5,6 @@
   background: #0F1114;
 
   @include option(height, 840px, 546px);
-  @include option(font-size, 13.3333px, 8.19259px);
-  @include option(line-height, 18px, 12px);
-  color: #7F858A;
-
-
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 400;
 
 
   &__logo {
@@ -34,6 +26,7 @@
   }
 
   &__main-text {
+    @extend %TEXT-18;
     position: absolute;
     font-size: inherit;
     line-height: inherit;
@@ -138,6 +131,7 @@
   }
 
   &__text {
+    @extend %TEXT-18;
     position: relative;
     font-size: inherit;
     line-height: inherit;
@@ -145,9 +139,7 @@
     @include option(left, 0, 92px);
     @include option(width, 448px, 204px);
 
-    @include MOBILE {
-      white-space: normal;
-    }
+
 
     &_white {
       color: #FFFFFF;

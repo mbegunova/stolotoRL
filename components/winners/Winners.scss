@@ -37,7 +37,6 @@
     align-items: center;
     flex-direction: column;
     color: #141D3A;
-    font-style: normal;
     pointer-events: none;
 
     text-align: left;
@@ -53,39 +52,25 @@
   }
 
   &__item-name {
+    @extend %TEXT-15;
     height: 27px;
     width: 80%;
-    font-weight: 600;
 
-    @include option(font-size, 20px, 17px);
-    @include option(line-height, 24px);
     @include option(margin, 35px 0 2px 0, 16px 0 2px 0);
-    color: #141D3A;
 
     flex: none;
     order: 0;
     flex-grow: 0;
-
-    @include MOBILE {
-      font-weight: 400;
-    }
   }
 
   &__item-prize {
+    @extend %TEXT-16;
     height: 63px;
     width: 80%;
-    font-weight: 700;
-    line-height: 116%;
-    @include option(font-size, 54px, 29px);
 
     flex: none;
     order: 0;
     flex-grow: 0;
-
-    @include MOBILE {
-      letter-spacing: 1.07573px;
-      text-transform: uppercase;
-    }
   }
 
   &__nav {
@@ -137,24 +122,14 @@
   }
 
   &__nav-text {
-    font-weight: 700;
-    @include option(font-size, 20px);
-    @include option(line-height, 20px);
+    @extend %TEXT-14;
     margin: auto;
-    color: #141D3A;
   }
 
   &__sign {
+    @extend %TEXT-17;
     margin: 12px auto;
     width: max-content;
-    @include option(font-size, 16px, 10px);
-    @include option(line-height, 22px, 16px);
-
-    font-weight: 500;
-    color: #141D3A;
-    @include MOBILE {
-      font-weight: 400;
-    }
 
     @include DESKTOP {
       margin: 0;
