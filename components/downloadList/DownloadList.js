@@ -19,7 +19,7 @@ export function DownloadList({ list, title, button, loadButton, image, buttons }
   }
 
   function mButtons() {
-    return buttons.map(({ text }, index) => (<Button key={index} className={"download-list__button"}>
+    return buttons.map(({ text,id }, index) => (<Button id={id} key={index} className={"download-list__button"}>
       <div className={"download-list__button-text"}>{text}</div>
     </Button>));
   }

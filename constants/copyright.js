@@ -196,6 +196,7 @@ export const downloadListContent = {
   },
   buttons: [
     {
+      id: "download",
       text: "Скачать"
     },
     {

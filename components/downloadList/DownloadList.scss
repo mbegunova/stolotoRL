@@ -118,7 +118,13 @@
   &__button {
     position: relative;
     @include option(margin, 0 auto, 10px auto);
-    @include option(top, 280px);
+    @include option(top, 280px, 30px);
+
+    &#download {
+      @include MOBILE {
+        display: none;
+      }
+    }
   }
 
   &__buttons-list {
