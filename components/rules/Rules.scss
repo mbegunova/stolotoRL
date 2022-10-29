@@ -13,72 +13,77 @@
     @include option(height, 607px, 400px);
     width: 100%;
     user-select: none;
-  }
 
-  .swiper-slide-active {
 
-    .rules__item {
-      box-sizing: border-box;
-      @include option(width, 1135px, 257px);
-      background: linear-gradient(180deg, #4C2B94 0%, rgba(76, 43, 148, 0) 100%), linear-gradient(180deg, #A75FDC 0%, #A34881 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
-      @include option(border-radius, 44px, 20px);
+    .swiper-slide-active {
 
-      border: none;
+      .rules__item {
+        box-sizing: border-box;
 
-      color: #FFFFFF;
+        left: 20%;
+        background: linear-gradient(180deg, #4C2B94 0%, rgba(76, 43, 148, 0) 100%), linear-gradient(180deg, #A75FDC 0%, #A34881 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
 
-      @include DESKTOP {
-        transform: translateX(0);
-      }
+        border: none;
 
-      @include MOBILE {
-        @include option-mob(height, 389px);
-      }
-
-    }
-
-    .rules {
-      &__item-num {
         color: #FFFFFF;
-        background: #FFDA00;
-      }
 
-      &__item-text {
+        @include MOBILE {
+          @include option-mob(height, 389px);
+          left: 0;
+        }
+
         @include DESKTOP {
-          @include option(width, 595.95px);
+          width: 107%;
         }
       }
 
-      &__item-image {
-        display: block;
-      }
+      .rules {
+        &__item-num {
+          color: #FFFFFF;
+          background: #FFDA00;
+        }
 
-      &__item-hr {
-        @include option(width, 1062px);
+        &__item-text {
+          @include DESKTOP {
+            width: 50%;
+          }
+        }
+
+        &__item-image {
+          display: block;
+        }
       }
     }
+
+
   }
+
 
   &__item {
     box-sizing: border-box;
 
     position: relative;
 
-    @include option(width, 518px, 257px);
+    //@include option(width, 518px, 257px);
+    // TODO: добавить min-width
     @include option(height, 607px, 389px);
     @include option(padding, 30px, 14px 22px);
-    @include option(margin, 0 198px, 0 auto);
+    @include option(margin, 0, 0 auto);
 
     background: rgba(255, 255, 255, 0.6);
     text-align: left;
     border: none;
-    border-radius: 44px;
+    @include option(border-radius, 44px, 20px);
     color: #141D3A;
 
-    @include DESKTOP {
-      transform: translateX(-76%);
+    width: 43%;
+
+    @include MOBILE {
+      width: 71%;
+      @include option-mob(min-width, 257px);
     }
+
   }
 
   &__item-num {
@@ -99,7 +104,7 @@
 
   &__item-hr {
     display: block;
-    @include option(width, 458px);
+    width: 94%;
     @include option(top, 134px);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -112,13 +117,16 @@
   &__item-title {
     font-weight: 700;
 
-    @include option(width, 360px, 131px);
+    //@include option(width, 360px, 131px);
     @include option(left, 33px);
     @include option(top, 153px);
     @include option(font-size, 40px, 17px);
 
+    width: 68%;
+
     @include MOBILE {
       font-weight: 700;
+      width: 50%;
       @include option-mob(line-height, 20px);
       @include option-mob(margin, 15px 0 10px 0);
     }
@@ -126,20 +134,26 @@
 
   &__item-text {
     @include option(left, 33px);
-    @include option(width, 455px, 218px);
+    //@include option(width, 455px);
     @include option(margin, 20px 0, 0);
     @include option(line-height, 31px, 20px);
     @include option(font-size, 24px, 17px);
 
     font-weight: 400;
     white-space: pre-line;
+
+    width: 100%;
+    //@include MOBILE {
+    //  width: 100%;
+    //}
   }
 
   &__item-image {
     position: absolute;
     @include option(top, 165px, 22px);
-    @include option(left, 830px, 148px);
+    right: 4%;
     display: none;
+
     @include MOBILE {
       display: block;
     }

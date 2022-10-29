@@ -6,10 +6,10 @@
   color: #141D3A;
 
   &__list {
-    @include option(width, 1555px);
     @include option(height, 650px);
     @include option(margin, 100px auto);
 
+    padding-left: 10%;
 
     flex-wrap: wrap;
     display: none;
@@ -38,6 +38,8 @@
     text-align: left;
 
     @include DESKTOP {
+      //width: 47.5%;
+      width: 39%;
       &_active {
         background: linear-gradient(180deg, #4C2B94 0%, rgba(76, 43, 148, 0) 100%), linear-gradient(180deg, #A75FDC 0%, #A34881 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
@@ -56,10 +58,14 @@
     @include option(font-size, 40px, 17px);
     font-weight: 700;
 
+    @include DESKTOP {
+      width: 60%;
+    }
+
   }
 
   &__item-text {
-    @include option(width, 682.84px, 219px);
+    @include option(max-width, 682.84px, 219px);
     @include option(margin, 30px, 8px 0 0 0);
 
     @include MOBILE {
@@ -69,7 +75,8 @@
 
   &__item-image {
     position: absolute;
-    @include option(left, 553px, 174px);
+    left: 75%;
+    //@include option(left, 553px, 174px);
     @include option(top, -39px, -22px);
 
     img {
@@ -80,7 +87,12 @@
 
   &__link {
     position: absolute;
-    @include option(left, 1560px, 16px);
+    left: 70%;
+
+    @include MOBILE {
+      left: 4%;
+    }
+
     @include option(top, 25px, 593px);
 
     @include option(width, 176px, 175px);
@@ -122,8 +134,8 @@
     @include DESKTOP {
       display: none;
     }
-
-    @include option(margin, 32px 0 79px 0);
+    position: relative;
+    @include option(margin, 0, 32px 0 79px 0);
 
     .swiper-wrapper {
       padding: 30px 0 0 0;

@@ -23,7 +23,12 @@
       @include option(height, 52.24px, 31.95px);
     }
 
-    @include option(left, 208px, 17.5px);
+    left: 11%;
+
+    @include MOBILE {
+      left: 5%;
+    }
+
     @include option(top, 228px, 17.5px);
 
   }
@@ -32,10 +37,17 @@
     position: absolute;
     font-size: inherit;
     line-height: inherit;
-    @include option(width, 904px, 281.01);
-    //width: 281.01px;
-    @include option(left, 208px, 16.3px);
+
+    //@include option(left, 208px, 16.3px);
     @include option(top, 310px, 64px);
+
+    width: 47%;
+    left: 11%;
+
+    @include MOBILE {
+      width: 78%;
+      left: 5%;
+    }
 
   }
 
@@ -71,9 +83,12 @@
   &__content {
     position: absolute;
     @include option(width, 448px);
-    @include option(left, 1204px, 16.5px);
     @include option(top, 228px, 327px);
+    left: 64%;
 
+    @include MOBILE {
+      left: 5%;
+    }
   }
 
   &__images {

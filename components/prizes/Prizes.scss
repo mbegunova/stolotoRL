@@ -21,8 +21,8 @@
   }
 
   &__button {
-    position: absolute;
-    @include option(bottom, 80px, 95px);
-    @include option(left, 781px, 18px);
+    position: relative;
+    @include option(top, 900px, 750px);
+    margin: 0 auto;
   }
 }
