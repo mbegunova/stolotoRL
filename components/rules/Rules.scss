@@ -30,11 +30,10 @@
         @include MOBILE {
           @include option-mob(height, 389px);
           left: 0;
+          width: auto;
         }
 
-        @include DESKTOP {
-          width: 107%;
-        }
+        width: 107%;
       }
 
       .rules {

@@ -12,9 +12,9 @@
     padding-left: 10%;
 
     flex-wrap: wrap;
-    display: none;
-    @include DESKTOP {
-      display: flex;
+    display: flex;
+    @include MOBILE {
+      display: none;
     }
   }
 
@@ -36,8 +36,7 @@
 
     text-align: left;
 
-    @include DESKTOP {
-      //width: 47.5%;
+    @include NOT-MOBILE {
       width: 39%;
       &_active {
         background: linear-gradient(180deg, #4C2B94 0%, rgba(76, 43, 148, 0) 100%), linear-gradient(180deg, #A75FDC 0%, #A34881 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -121,9 +120,9 @@
   }
 
   &__carousel {
-    display: block;
-    @include DESKTOP {
-      display: none;
+    display: none;
+    @include MOBILE {
+      display: block;
     }
     position: relative;
     @include option(margin, 0, 32px 0 79px 0);
