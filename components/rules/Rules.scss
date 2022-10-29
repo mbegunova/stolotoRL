@@ -213,8 +213,10 @@
   }
 
   &__button-textM {
-    @include DESKTOP {
-      display: none;
+    display: none;
+
+    @include MOBILE {
+      display: block;
     }
   }
 }
