@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   background: #0F1114;
-
+  @extend %TEXT-18;
   @include option(height, 840px, 546px);
 
 
@@ -26,7 +26,7 @@
   }
 
   &__main-text {
-    @extend %TEXT-18;
+
     position: absolute;
     font-size: inherit;
     line-height: inherit;
@@ -131,7 +131,6 @@
   }
 
   &__text {
-    @extend %TEXT-18;
     position: relative;
     font-size: inherit;
     line-height: inherit;
