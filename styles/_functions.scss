@@ -172,7 +172,7 @@
 }
 
 @function vht($v){
-  @return adaptive( $v, $DESIGN-H, 1vh*0.85);
+  @return adaptive( $v, $DESIGN-H, 1vh*1);
 }
 
 @function vhm($v){

@@ -10,13 +10,16 @@
     height: 100vh;
   }
 
-  background-image: url("/images/bg/main-full.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  @include MOBILE {
-    background-image: url("/images/bg/mainM-full.png");
-  }
+  background: #FFDD63;
+
+  //background-image: url("/images/bg/main-full.png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+
+  //@include MOBILE {
+  //  background-image: url("/images/bg/mainM-full.png");
+  //}
 }
 
 .content-wrapper {
